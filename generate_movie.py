@@ -13,7 +13,6 @@ def create_heatmap_movie():
     df['Era'] = df['year_build'].apply(get_efficiency_era)
     df_gf = df[df['Era'] == 'G/F'].copy()
     
-    # Cast date to datetime and create Quarter string
     df_gf['date_dt'] = pd.to_datetime(df_gf['date'])
     df_gf['Quarter'] = df_gf['date_dt'].dt.to_period('Q').astype(str)
     
@@ -32,7 +31,6 @@ def create_heatmap_movie():
     }
     
     fig = go.Figure()
-    # Limit quarters to the last decade for focus, and ensuring enough space
     quarters = sorted(agg['Quarter'].unique())
     quarters = [q for q in quarters if q >= '2016Q1']
     agg = agg[agg['Quarter'].isin(quarters)]
@@ -44,9 +42,10 @@ def create_heatmap_movie():
         fig.add_trace(go.Scattergeo(
             lon=[area_coords[r][1] for r in q_data['area']],
             lat=[area_coords[r][0] for r in q_data['area']],
-            text=q_data['area'] + ": " + q_data['sqm_price'].astype(int).astype(str) + " DKK",
-            mode='markers+text',
-            textposition="top center",
+            # Remove text from markers to prevent overlap, rely on hover
+            hoverinfo="text",
+            hovertext=q_data['area'] + ": " + q_data['sqm_price'].astype(int).astype(str) + " DKK",
+            mode='markers',
             marker=dict(
                 size=q_data['sqm_price'] / 400,
                 color=q_data['sqm_price'],
@@ -71,15 +70,14 @@ def create_heatmap_movie():
         step["args"][0]["visible"][i] = True
         steps.append(step)
         
-    # Improve slider bar visibility
     sliders = [dict(
         active=0,
-        currentvalue={"prefix": "Selected: ", "font": {"size": 20}, "visible": True},
-        pad={"t": 80, "b": 10}, # Added bottom padding
+        currentvalue={"prefix": "Selected: ", "font": {"size": 16}, "visible": True},
+        pad={"t": 80, "b": 10},
         steps=steps,
         minorticklen=0,
         ticklen=10,
-        len=0.9, # Reduced width slightly to prevent clipping
+        len=0.9,
         x=0.05
     )]
     
@@ -91,18 +89,18 @@ def create_heatmap_movie():
             lonaxis_range=[8, 16],
             lataxis_range=[54.5, 58],
             showland=True,
-            landcolor="#f0f0f0",
+            landcolor="#f5f5f5",
             subunitcolor="white",
-            countrycolor="#d0d0d0",
+            countrycolor="#dcdcdc",
             bgcolor="rgba(0,0,0,0)"
         ),
-        margin={"r":20,"t":100,"l":20,"b":50}, # Increased margins
-        height=700, # Explicit height
+        margin={"r":20,"t":100,"l":20,"b":50},
+        height=700,
         title=dict(
             text="The Evolution of the Insulation Penalty: G/F Era (2016-2024)",
             x=0.5,
             y=0.95,
-            font=dict(size=24, family="Helvetica Neue")
+            font=dict(size=22, family="Helvetica Neue")
         ),
         font=dict(family="Georgia, serif")
     )
