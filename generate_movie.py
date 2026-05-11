@@ -13,12 +13,11 @@ def create_heatmap_movie():
     df['Era'] = df['year_build'].apply(get_efficiency_era)
     df_gf = df[df['Era'] == 'G/F'].copy()
     
-    df_gf['Quarter'] = pd.to_datetime(df_gf['date']).dt.to_period('Q').astype(str)
+    # Cast date to datetime and create Quarter string
+    df_gf['date_dt'] = pd.to_datetime(df_gf['date'])
+    df_gf['Quarter'] = df_gf['date_dt'].dt.to_period('Q').astype(str)
     
-    # Use 'area' for more granularity
     agg = df_gf.groupby(['Quarter', 'area'], observed=True)['sqm_price'].median().reset_index()
-    
-    # Cast area to string to avoid Categorical + str error
     agg['area'] = agg['area'].astype(str)
     
     area_coords = {
@@ -33,8 +32,9 @@ def create_heatmap_movie():
     }
     
     fig = go.Figure()
+    # Limit quarters to the last decade for focus, and ensuring enough space
     quarters = sorted(agg['Quarter'].unique())
-    quarters = [q for q in quarters if q >= '2014Q1']
+    quarters = [q for q in quarters if q >= '2016Q1']
     agg = agg[agg['Quarter'].isin(quarters)]
     
     for q in quarters:
@@ -45,12 +45,14 @@ def create_heatmap_movie():
             lon=[area_coords[r][1] for r in q_data['area']],
             lat=[area_coords[r][0] for r in q_data['area']],
             text=q_data['area'] + ": " + q_data['sqm_price'].astype(int).astype(str) + " DKK",
+            mode='markers+text',
+            textposition="top center",
             marker=dict(
                 size=q_data['sqm_price'] / 400,
                 color=q_data['sqm_price'],
                 colorscale='RdYlGn_r',
                 showscale=True,
-                colorbar=dict(title="Median Price/sqm", thickness=15, len=0.5)
+                colorbar=dict(title="Median Price/sqm", thickness=15, len=0.7, y=0.5)
             ),
             name=q,
             visible=False
@@ -63,13 +65,23 @@ def create_heatmap_movie():
         step = dict(
             method="update",
             args=[{"visible": [False] * len(fig.data)},
-                  {"title": f"The Evolution of the Insulation Penalty: G/F Era Housing Prices ({q})"}],
+                  {"title": f"The Evolution of the Insulation Penalty: G/F Era ({q})"}],
             label=q
         )
         step["args"][0]["visible"][i] = True
         steps.append(step)
         
-    sliders = [dict(active=0, currentvalue={"prefix": "Quarter: "}, pad={"t": 50}, steps=steps)]
+    # Improve slider bar visibility
+    sliders = [dict(
+        active=0,
+        currentvalue={"prefix": "Selected: ", "font": {"size": 20}, "visible": True},
+        pad={"t": 80, "b": 10}, # Added bottom padding
+        steps=steps,
+        minorticklen=0,
+        ticklen=10,
+        len=0.9, # Reduced width slightly to prevent clipping
+        x=0.05
+    )]
     
     fig.update_layout(
         sliders=sliders,
@@ -79,18 +91,24 @@ def create_heatmap_movie():
             lonaxis_range=[8, 16],
             lataxis_range=[54.5, 58],
             showland=True,
-            landcolor="white",
-            subunitcolor="lightgray",
-            countrycolor="gray",
-            bgcolor="rgba(244,244,244,1)"
+            landcolor="#f0f0f0",
+            subunitcolor="white",
+            countrycolor="#d0d0d0",
+            bgcolor="rgba(0,0,0,0)"
         ),
-        margin={"r":0,"t":100,"l":0,"b":0},
-        title="The Evolution of the Insulation Penalty: G/F Era Housing Prices (2014-2024)",
-        font=dict(family="Georgia, serif", size=14)
+        margin={"r":20,"t":100,"l":20,"b":50}, # Increased margins
+        height=700, # Explicit height
+        title=dict(
+            text="The Evolution of the Insulation Penalty: G/F Era (2016-2024)",
+            x=0.5,
+            y=0.95,
+            font=dict(size=24, family="Helvetica Neue")
+        ),
+        font=dict(family="Georgia, serif")
     )
     
     fig.write_html('docs/vulnerability_movie.html')
-    print("Vulnerability Movie saved to docs/vulnerability_movie.html")
+    print("Fixed Vulnerability Movie saved.")
 
 if __name__ == "__main__":
     create_heatmap_movie()

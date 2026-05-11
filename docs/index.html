@@ -40,20 +40,20 @@
 
     <div class="viz-container">
         <h3>1. The Shift in Sentiment</h3>
-        <img src="ridges_pre.png" alt="Pre-Crisis Ridges" style="width: 45%;">
-        <img src="ridges_peak.png" alt="Crisis Ridges" style="width: 45%;">
-        <p class="caption">Figure 1: Ridgeline distributions of price per sqm by building era. Notice the "Overlap" in the stable 2018-19 market (left), where G-era and D-era houses shared a common price floor. In the 2022-23 crisis (right), the distributions decouple; the G/F distributions (bottom) shift left and flatten, showing a forced market exit for inefficient homes.</p>
+        <img src="ridges_pre.png" alt="Pre-Crisis Ridges" style="width: 100%; margin-bottom: 2rem;">
+        <img src="ridges_peak.png" alt="Crisis Ridges" style="width: 100%;">
+        <p class="caption">Figure 1: Ridgeline distributions of price per sqm by building era. In the stable 2018-19 market (top), all building eras shared overlapping price distributions. By the 2022-23 crisis peak (bottom), the market decoupled: legacy housing (G-E) saw its price floor drop significantly, while modern builds (B-A) maintained their equity.</p>
     </div>
 
     <div class="narrative">
         <h2>The Geography of Vulnerability</h2>
-        <p>This decoupling isn't just a number—it's a map. The "Insulation Penalty" hit hardest in the rural outskirts where individual natural gas and oil boilers are the norm. In the interactive movie below, we track the median price of these vulnerable G/F era homes. Watch how the "Stress" (red bubbles) intensifies as we move away from the shielded urban centers of Copenhagen and Aarhus.</p>
+        <p>This decoupling isn't just a number—it's a map. The "Insulation Penalty" hit hardest in the rural outskirts where individual natural gas and oil boilers are the norm. In the interactive movie below, we track the median price of these vulnerable G/F era homes across Denmark's administrative areas. Watch how the "Stress" (red bubbles) intensifies as the crisis enters full swing in 2022.</p>
     </div>
 
-    <div class="viz-container">
+    <div class="viz-container" style="background: #f0f0f0; padding: 2rem; border-radius: 4px;">
         <h3>2. The Vulnerability Movie</h3>
-        <iframe src="vulnerability_movie.html" width="100%" height="600px" frameborder="0"></iframe>
-        <p class="caption">Figure 2: Animated regional heatmap. Each bubble represents the median price of the most inefficient building stock (G/F era). As the timeline enters 2022, observe the contraction in bubble size and the shift toward the red spectrum in rural areas, marking the geographic frontlines of the energy crisis.</p>
+        <iframe src="vulnerability_movie.html" width="100%" height="750px" frameborder="0"></iframe>
+        <p class="caption">Figure 2: Animated regional heatmap. Each bubble represents the median price of the most inefficient building stock (G/F era). Scrub through the timeline to see the market contraction and the shifting price floor across Denmark's key regions.</p>
     </div>
 
     <blockquote>
@@ -61,19 +61,19 @@
     </blockquote>
 
     <div class="narrative">
-        <h2>The Resilient Anomaly</h2>
-        <p>Is an old home a financial dead-end? Not necessarily. Our final map isolates the "Resilient Outliers." By mapping the price residuals against nature proximity, we find a subset of legacy homes that defied the crash. These are the homes where environmental value (forest views, protected meadows) acted as a "Green Buffer," absorbing the energy shock that wiped out their urban peers.</p>
+        <h2>The Seasonal Pulse</h2>
+        <p>Finally, we look at the <i>rhythm</i> of the market. Using temporal heatmap techniques from the course, we've mapped the monthly sales intensity across the last five years. Even during the peak crisis months of 2022, the "Legacy" building stock (G-E) shows a erratic, stuttering pulse compared to the steady seasonal rhythm of modern homes. This visualizes the "Market Paralysis" felt by owners of energy-vulnerable assets.</p>
     </div>
 
     <div class="viz-container">
-        <h3>3. The Green Buffer Atlas</h3>
-        <iframe src="geographic_distribution.html" width="100%" height="600px" frameborder="0"></iframe>
-        <p class="caption">Figure 3: Multi-layer stress map. Red circles indicate price penalties in legacy building stock. Use the Layer Control to toggle "Resilient Nature Clusters"—markers indicating homes that maintained a price premium despite poor insulation, specifically due to their proximity to protected nature.</p>
+        <h3>3. The Heartbeat of the Market</h3>
+        <img src="market_rhythms.png" alt="Market Rhythms Heatmap" style="width: 100%;">
+        <p class="caption">Figure 3: Temporal Heatmap (Year vs. Month). This visualization tracks sales volume from 2019 to 2024. Notice how modern housing (left) follows a predictable seasonal peak each summer, whereas legacy housing (right) shows a visible 'graying out' during the winter of 2022—a period of market freeze for inefficient homes.</p>
     </div>
 
     <div class="narrative">
         <h2>Conclusion</h2>
-        <p>The energy crisis of 2022 didn't just change our utility bills; it re-indexed the value of the Danish home. As we move toward a carbon-neutral future, the "Decoupling" we've observed is likely permanent. The home of the future is no longer just a place to live—it is a technical asset, and its resilience is defined by both its walls and its view.</p>
+        <p>The energy crisis of 2022 didn't just change our utility bills; it re-indexed the value of the Danish home. As we move toward a carbon-neutral future, the "Decoupling" we've observed is likely permanent. The home of the future is no longer just a place to live—it is a technical asset, and its resilience is defined by its walls.</p>
         
         <center>
             <a href="https://github.com/suneman/socialdata2026/blob/main/Final_Project_Explainer.ipynb" class="btn-link">TECHNICAL EXPLAINER & DATA PIPELINE</a>
