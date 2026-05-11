@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Geography of Resilience | Social Data 2026</title>
+    <title>The Green Buffer | Social Data 2026</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <style>
         body { font-family: 'Georgia', serif; line-height: 1.6; color: #333; background-color: #f4f4f4; }
@@ -13,60 +13,61 @@
         .hero h1 { font-size: 4.5rem; margin-bottom: 1rem; }
         .author { font-style: italic; color: #666; }
         .viz-container { margin: 4rem 0; text-align: center; }
-        .viz-container img, .viz-container iframe { max-width: 100%; border: 1px solid #ddd; }
-        .caption { font-size: 0.9rem; color: #777; margin-top: 1rem; font-style: italic; }
+        .viz-container img, .viz-container iframe { max-width: 100%; border: 1px solid #ddd; border-radius: 4px; }
+        .caption { font-size: 0.95rem; color: #555; margin-top: 1.5rem; font-style: italic; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.4; }
         .narrative { max-width: 700px; margin: 0 auto; }
         .dropcap { float: left; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; }
-        .btn-link { display: inline-block; padding: 1rem 2rem; background: #333; color: white; text-decoration: none; border-radius: 4px; margin-top: 2rem; }
-        .btn-link:hover { background: #555; }
+        .btn-link { display: inline-block; padding: 1rem 2rem; background: #2e7d32; color: white; text-decoration: none; border-radius: 4px; margin-top: 2rem; font-weight: bold; }
+        .btn-link:hover { background: #1b5e20; }
+        h2 { margin-top: 4rem; border-left: 5px solid #2e7d32; padding-left: 1.5rem; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <div class="hero">
-        <h1>The Geography of Resilience</h1>
+        <h1>The Green Buffer</h1>
         <p class="author">By Frederik Sunesen | May 2026</p>
     </div>
 
     <div class="narrative">
-        <p><span class="dropcap">W</span>hen the global energy market fractured in 2022, Denmark found itself divided not by politics, but by pipes. For decades, the energy efficiency of our homes—the "Energimærke"—was a theoretical label on a technical report. Overnight, it became a primary driver of financial anxiety.</p>
+        <p><span class="dropcap">W</span>hen the global energy market fractured in 2022, the "Energimærke"—Denmark's energy efficiency label—transformed from a bureaucratic footnote into a primary driver of household wealth. For decades, the insulation quality of a home was a theoretical concern. Overnight, it became a financial dividing line.</p>
 
-        <h2>The Two Denmarks</h2>
-        <p>In our major cities, the shock was cushioned. Shielded by collective district heating systems, urban dwellers saw moderate increases. But in the rural landscape, the story was different. Individual natural gas boilers and oil furnaces turned into "toxic assets" as fuel prices skyrocketed.</p>
+        <h2>The Insulation Penalty</h2>
+        <p>The market response was swift and merciless. Homes built before the first major building regulations (pre-1961) saw their market value stagnate or decline relative to modern, high-efficiency builds. This "Insulation Penalty" created a widening gap in the Danish housing market, punishing owners of legacy building stock who were exposed to skyrocketing heating costs.</p>
     </div>
 
     <div class="viz-container">
         <h3>1. The Widening Gap</h3>
         <img src="price_slope_chart.png" alt="Price Slope Chart">
-        <p class="caption">Figure 1: This slope chart shows the divergence in median price per square meter between building eras. Notice how the oldest, least efficient homes (G/F Era) saw the most significant relative decline in value compared to the 'High Efficiency' cluster during the 2022-23 crisis.</p>
+        <p class="caption">Figure 1: This slope chart tracks the median price per square meter from the stable 2019 market to the 2023 crisis peak. Notice how the 'G/F Era' houses (red) failed to keep pace with the 'High Efficiency' cluster (green), representing a significant loss in relative equity for owners of poorly insulated homes.</p>
     </div>
 
     <div class="narrative">
-        <h2>Mapping the Crisis</h2>
-        <p>The geography of this crisis is not uniform. While our cities are anchored by collective heating, the rural landscape is a patchwork of risk and reward. Below, we map the distribution of sales across Denmark, highlighting the age of the building stock—a proxy for insulation quality.</p>
+        <h2>Nature as a Financial Shield</h2>
+        <p>However, our research reveals a hidden counter-trend. While energy labels are a powerful predictor of price, they are not destiny. We hypothesized that <strong>proximity to protected nature</strong> acts as a "Green Buffer," offsetting the insulation penalty. In the new Danish reality, a drafty window might be forgiven if it overlooks a protected forest or meadow.</p>
     </div>
 
     <div class="viz-container">
-        <h3>2. The Geographic Pulse</h3>
-        <iframe src="geographic_distribution.html" width="100%" height="500px" frameborder="0"></iframe>
-        <p class="caption">Figure 2: Geographic distribution of sales. Green points indicate modern, high-efficiency builds (Post-2010), while red points show the legacy building stock exposed to energy volatility.</p>
+        <h3>2. The Geography of Resilience</h3>
+        <iframe src="geographic_distribution.html" width="100%" height="600px" frameborder="0"></iframe>
+        <p class="caption">Figure 2: Mapping 'Resilient Outliers'. The large, vibrant green dots represent older homes (G, F, E energy labels) that defied the market trend—they sold <i>above</i> their local municipal median specifically because they are situated within 5km of protected nature. The smaller gray dots represent standard sales that behaved as expected under the crisis penalty.</p>
     </div>
 
     <div class="narrative">
-        <h2>The 'Green Buffer' Hypothesis</h2>
-        <p>Can a homeowner buy their way out of a bad energy label? Our final analysis looks at the 'Price Deviation'—how much more or less a house sells for compared to its local city average. Use the interactive tool below to explore how individual investments in renewable systems (Solar/Heat Pumps) act as a financial buffer.</p>
+        <h2>Quantifying the Trade-off</h2>
+        <p>By analyzing the <i>residuals</i>—the difference between a house's actual sale price and its expected municipal median—we can isolate this "Nature Premium." The interactive tool below breaks down the distributions. Even in the oldest building eras, the median premium for houses with "Immediate" nature proximity frequently sits well above the zero-line, effectively neutralizing the energy crisis discount.</p>
     </div>
 
     <div class="viz-container">
-        <h3>3. The Resilience Calculator</h3>
+        <h3>3. The Nature vs. Insulation Trade-off</h3>
         <iframe src="interactive_analysis.html" width="100%" height="600px" frameborder="0"></iframe>
-        <p class="caption">Figure 3: Interactive strip plot showing price premiums over city medians. Explore how 'Renewable Systems' (blue dots) help even older 'E' and 'D' era houses maintain a premium over their peers.</p>
+        <p class="caption">Figure 3: Interactive Box and Strip Plot. The Y-axis shows the price premium (or penalty) relative to the local city median. Notice how the green boxes ('Immediate' nature proximity) consistently sit higher than the red boxes ('Distant'), proving that environmental amenities can hedge against energy volatility across almost all building eras.</p>
     </div>
 
     <div class="narrative">
         <h2>Conclusion</h2>
-        <p>Our analysis suggests that while the energy label (A-G) is a powerful predictor of price, it is not destiny. In the new Danish reality, the combination of location and technical autonomy is redefining what it means for a home to be resilient.</p>
+        <p>The 2022 energy crisis didn't just change how we heat our homes; it changed what we value in them. While energy efficiency remains a critical baseline, the "Green Buffer" effect suggests that human connection to the landscape remains a potent economic force. Resilience, it seems, is found both in the thickness of our walls and the view from our windows.</p>
         
         <center>
             <a href="https://github.com/suneman/socialdata2026/blob/main/Final_Project_Explainer.ipynb" class="btn-link">Read the Technical Explainer Notebook</a>

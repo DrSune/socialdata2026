@@ -1,0 +1,501 @@
+input,lon,lat,status
+"Mørkhøjvej 237E, 2860 Søborg",12.47222174,55.72755089,success
+"Storegade 3, st, 8752 Astbirk",,,not_found
+"Klostervej 28E, 2. mf, 5000 Odense C",10.38081013,55.39883538,success
+"Tårupvej 22, 8963 Auning",10.38102625,56.43717777,success
+"Fynsvej 50, 4000 Roskilde",12.09919533,55.66042239,success
+"Bredengen 32, 4000 Roskilde",12.01706019,55.63941616,success
+"Vangede Bygade 122, 2820 Gentofte",12.51952229,55.74784036,success
+"Rønnevej 16, 7323 Give",9.24710155,55.84290738,success
+"Sdr. Strandvej 66, 3770 Allinge",14.84729014,55.24538797,success
+"Skovbakkevej 35B, 8220 Brabrand",10.10893558,56.1578658,success
+"Ved Stormklokken 5, 6100 Haderslev",9.48439559,55.25229886,success
+"Kromarken 16, 3480 Fredensborg",12.35124966,55.97782167,success
+"Grundvej 3, 4591 Føllenslev",11.34859214,55.75612171,success
+"Enighedsvej 2, 1. tv, 2920 Charlottenlund",12.57075399,55.7518628,success
+"Lille Havdrupvej 4, 4622 Havdrup",12.15645353,55.5475453,success
+"Lyngvej 5, 3220 Tisvildeleje",12.10388822,56.04775118,success
+"Nørholmvej 6, 7361 Ejstrupholm",9.30486077,55.98330898,success
+"Følfodvej 8, 4840 Nørre Alslev",11.87122586,54.89117659,success
+"Seggelund Hovedvej 34, 6070 Christiansfeld",9.49006188,55.33484504,success
+"Snehøjvej 10, 9500 Hobro",9.77307873,56.64255844,success
+"Oktobervej 59B, 8210 Aarhus V",,,not_found
+"Stenløsevej 99, 5260 Odense S",10.38288774,55.35865418,success
+"Horsensvej 18, 2. mf, 3000 Helsingør",12.5933315,56.0216861,success
+"Dalene 18, 5450 Otterup",10.32031378,55.56678674,success
+"Aster Bordingvænget 10, 8600 Silkeborg",,,not_found
+"Bremensgade 32, st. tv, 2300 København S",12.61695034,55.66469827,success
+"Jernvedvej 42, 6771 Gredstedbro",8.76189463,55.40724113,success
+"Søndervænget 52, 7790 Thyholm",8.53051449,56.6458271,success
+"Bøgebakken 34, 8870 Langå",9.9489231,56.43756183,success
+"Katrinevej 54, 7800 Skive",9.00154782,56.5854727,success
+"Bakkevej 1A, 7840 Højslev",9.09860206,56.55271554,success
+"Hummervej 10, 8400 Ebeltoft",10.65119315,56.23058186,success
+"Torpet 84, 4300 Holbæk",11.6734584,55.70293661,success
+"Hf. Brønshøjholm 42, 2700 Brønshøj",12.5022326,55.70891792,success
+"Borgergade 21, 1. tv, 6700 Esbjerg",8.45518746,55.46512802,success
+"Kenny Drews Vej 27, 3. th, 2450 København SV",12.54953012,55.64633692,success
+"Frimestervej 2, 1. th, 2400 København NV",12.53707625,55.70653701,success
+"Rørvigvej 108, 4500 Nykøbing Sj",11.68021911,55.93541227,success
+"Munkeparken 91, 6240 Løgumkloster",8.93981655,55.05060164,success
+"Strandengen 9, 3630 Jægerspris",11.95170638,55.92912794,success
+"Højvangen 15, 8700 Horsens",9.85998075,55.83888573,success
+"Husmandsvej 4, 2630 Taastrup",12.29074872,55.63937444,success
+"Johan Kellers Vej 42, 1. tv, 2450 København SV",12.53577148,55.65517904,success
+"Skolesvinget 45, 8240 Risskov",10.22547839,56.19688528,success
+"Maj Alle 22, 2860 Søborg",12.46678155,55.72732794,success
+"Hummervej 1, 7700 Thisted",8.38103917,56.95438631,success
+"Bygaden 18C, 4490 Jerslev Sjælland",11.24040424,55.61070611,success
+"Cumberlandsgade 8, 2. tv, 2300 København S",12.61548575,55.66741675,success
+"Teglværksvej 20, 8420 Knebel",10.36239329,56.19432825,success
+"Degnevænget 1, 5270 Odense N",10.33917785,55.42864446,success
+"Ãbakken 18, 7130 Juelsminde",,,not_found
+"Højvangen 24, 9800 Hjørring",9.98889583,57.46602885,success
+"Grønbækvej 59, 8600 Silkeborg",9.62104517,56.24674551,success
+"Elstarvej 19, 1. mf, 2500 Valby",12.50334912,55.65616657,success
+"Assensvej 77, 5771 Stenstrup",10.52347206,55.11665899,success
+"Ellebæk Parkvej 27, 8520 Lystrup",10.22040841,56.23342066,success
+"Gasværksgade 25, 6700 Esbjerg",8.46161197,55.46377695,success
+"Lindevænget 7, 4873 Væggerløse",11.96083607,54.68294643,success
+"Lundevej 36, 2. 2, 4400 Kalundborg",11.07340503,55.68211999,success
+"Skodborghusvej 15, 6600 Vejen",9.13698403,55.44375559,success
+"Borgergade 19, 2, 8700 Horsens",9.85498624,55.8615064,success
+"Ejlesøvej 15, 4000 Roskilde",12.14634079,55.73829814,success
+"Bygaden 76, 4983 Dannemare",11.19861396,54.76027017,success
+"Tingodden 119, 6960 Hvide Sande",8.1418011,55.95801061,success
+"Degneløkken 57, 5540 Ullerslev",10.64998499,55.35866777,success
+"Gråspurvevej 63, st, 2400 København NV",12.52378778,55.70313246,success
+"Nældebjerg Alle 41, 2670 Greve",12.27825304,55.58314651,success
+"Slusevej 105, 2300 København S",12.58527678,55.62873685,success
+"Kvarmløsevej 5, st, 4340 Tølløse",11.77203994,55.61324384,success
+"Rasmus Rasks Vej 16, 2. tv, 2500 Valby",12.51741294,55.66264297,success
+"Thorsensvej 5, 6740 Bramming",8.70244916,55.46223991,success
+"Spurvevej 12, 4690 Haslev",12.05510951,55.31646111,success
+"Svanemosevej 10, 9490 Pandrup",9.63545777,57.19143,success
+"Bækken 23, 3700 Rønne",14.70159181,55.09553345,success
+"Tybjergvej 20, 2720 Vanløse",12.47485698,55.69288225,success
+"Lundevej 95, 1. th, 4400 Kalundborg",11.07215969,55.68143514,success
+"Drostrupgårdvej 12, 6600 Vejen",9.13944795,55.52140431,success
+"Gaabensevej 250, 4800 Nykøbing F",11.8705618,54.81207648,success
+"Nejedevej 17, 3400 Hillerød",12.21022749,55.95115928,success
+"Knudsvej 19, 3700 Rønne",14.70270361,55.10433707,success
+"Lollandsgade 41, 1, 8000 Aarhus C",10.20144376,56.16056838,success
+"Hasselbakken 101, 8500 Grenaa",10.85728247,56.42036545,success
+"Strandvej 32, st. th, 4220 Korsør",11.13121891,55.33684607,success
+"Kirsteinsgade 4, 1. th, 2100 København A",,,not_found
+"Krokusvej 14, 4683 Rønnede",12.03636591,55.25419587,success
+"Fyrtårnsvej 18, 6320 Egernsund",9.62040128,54.90565733,success
+"Lærkevej 18, 4560 Vig",11.5415508,55.87982092,success
+"Søglimt 19, 6340 Kruså",9.39644497,54.8505319,success
+"Johannes Hansens Vej 6. mf, 9830 Tårs",10.10983212,57.38598037,success
+"Birkevej 4, 7330 Brande",9.13369326,55.94509888,success
+"Mådevej 13, 6700 Esbjerg",8.48324097,55.46242232,success
+"Gammel Skovvej 2B, 3060 Espergærde",12.55149694,55.99472969,success
+"Drachmannsvej 37, 9990 Skagen",10.56570132,57.72205348,success
+"Parcelvej 53, 2840 Holte",12.45307965,55.8000401,success
+"Golfsvinget 120, 9640 Farsø",9.38439661,56.87153402,success
+"Grønnehavevej 13A, 1. tv, 3000 Helsingør",12.61029878,56.04012631,success
+"Lyøvej 11, 3450 Allerød",12.34186963,55.85513731,success
+"Stenkisten 6, 7100 Vejle",9.5615464,55.68557671,success
+"Buddingevej 190, 1. 101, 2860 Søborg",12.49475155,55.75290198,success
+"Eranthisvej 19, 6710 Esbjerg V",8.42890798,55.49471128,success
+"Månestien 1, 2670 Greve",12.30875404,55.58640923,success
+"Middelbanke 8, 9990 Skagen",10.54885555,57.72901094,success
+"Dyrupgårdvænget 92, 5250 Odense SV",10.35399324,55.35476271,success
+"Nordstensvej 2, 1. 1, 3400 Hillerød",12.30006312,55.92888427,success
+"Skovtoften 58, 4800 Nykøbing F",11.84478523,54.76798053,success
+"Kastetvej 15A, 3. 2, 9000 Aalborg",9.90940124,57.05242799,success
+"Samsøvej 25, 4000 Roskilde",12.09401511,55.61577132,success
+"Skov-Torupvej 2, 4683 Rønnede",12.03647546,55.2594089,success
+"Silkeborgvej 189, 8700 Horsens",9.76840962,55.89464879,success
+"Tømrervej 8, 7130 Juelsminde",9.95641885,55.81350718,success
+"Skolesvinget 20, 7400 Herning",8.89148881,56.12919648,success
+"Grønningen 19, 1. th, 7200 Grindsted",8.9133679,55.76452411,success
+"Metavang 33, 2670 Greve",12.29819061,55.58308517,success
+"Hovedgaden 83, 6360 Tinglev",9.24432351,54.93367562,success
+"Marbækvej 8, 2. 3, 2750 Ballerup",12.37495473,55.71959296,success
+"P Dovns Slippe 1, 6760 Ribe",8.76316122,55.32819613,success
+"Højbovej 1, 9240 Nibe",9.68598702,56.90862659,success
+"Vesterlundvej 7, st. tv, 8600 Silkeborg",9.55936639,56.12948381,success
+"Præsthøjvej 6, 3300 Frederiksværk",12.03233797,55.9466335,success
+"Anders Billes Vej 21, 7000 Fredericia",9.74573762,55.56755022,success
+"Høje Støvring 115, 9530 Støvring",9.83362748,56.86461789,success
+"Vollerup Vang 12, 4400 Kalundborg",11.06321574,55.73148937,success
+"Lønstrupvej 96, 2720 Vanløse",12.47670792,55.68364666,success
+"Klitheden Nord 3B, 9492 Blokhus",9.62253795,57.24543393,success
+"Skovhøjen 19, 8800 Viborg",9.42075054,56.42321591,success
+"Vorupørvej 67, 7700 Thisted",8.5342631,56.93433999,success
+"Holbækvej 14, st. tv, 4000 Roskilde",12.0689919,55.63438974,success
+"Jonstrupvej 276, 3500 Værløse",12.33852212,55.75833537,success
+"Byvangen 20, 3550 Slangerup",12.16803239,55.85152836,success
+"Carl Plougs Vej 92, 6000 Kolding",9.46316051,55.47484115,success
+"Gærdesmuttevej 5, 3450 Allerød",12.34759943,55.86410244,success
+"Serinedalen 41, 8340 Malling",10.1852391,56.02694565,success
+"Lægårdvej 45, 7500 Holstebro",,,not_found
+"Hessensgade 41, st. th, 2300 København S",12.61674355,55.66399895,success
+"Valnøddevej 36, 3630 Jægerspris",11.99316637,55.85112309,success
+"Sjællandsgade 14, 2. th, 4100 Ringsted",11.78839711,55.44079146,success
+"Ahornvej 49, 4220 Korsør",11.17966332,55.36393927,success
+"Kongevejen 296, 3490 Kvistgård",12.50827109,55.99357073,success
+"Hvidovrevej 275, 1. 14, 2650 Hvidovre",12.48014887,55.63755702,success
+"Ellegårdsvej 13, 4684 Holmegaard",11.80072831,55.27432267,success
+"Fridlevs Vænge 36, 4330 Hvalsø",11.8774353,55.59276221,success
+"Tørholmsvej 106, 9800 Hjørring",9.99425185,57.46804178,success
+"Hans Jørgensvej 21, 6840 Oksbøl",8.27875989,55.62064688,success
+"Astre Havnegade 42, 10, 9000 Aalborg",,,not_found
+"Klintegårdsvej 74, 4736 Karrebæksminde",11.67030835,55.1639563,success
+"Søvej 49B, 2791 Dragør",12.61916925,55.56781094,success
+"Ãrslev Kirkevej 12, 8220 Brabrand",,,not_found
+"Mølleparken 4, 7500 Holstebro",8.6163177,56.34741836,success
+"Strandvænget 52, 8300 Odder",10.24664795,55.98209403,success
+"Broengen 6, 3630 Jægerspris",11.94122793,55.81160937,success
+"Hejmdalsvej 11, 8920 Randers NV",10.01406972,56.47387065,success
+"Ãløkke 78, 6372 Bylderup-Bov",,,not_found
+"Drewsensvej 70, st. 9, 8600 Silkeborg",9.54125983,56.16449552,success
+"Nordsø Ferievej 64, 6950 Ringkøbing",8.11135015,56.06747704,success
+"Skovbrynet 24, 4671 Strøby",12.3211518,55.39598413,success
+"Kirkevænget 76, 8310 Tranbjerg J",10.1297336,56.08346679,success
+"Vestergade 12, 6900 Skjern",8.641939,55.95938801,success
+"A N Hansens Alle 23, 2900 Hellerup",12.57961577,55.7363418,success
+"Karsholtevej 44B, 4293 Dianalund",11.48157933,55.53298839,success
+"Fægangsvej 33, 8585 Glesborg",10.71476178,56.5287796,success
+"Fasanvej 62, 8800 Viborg",9.38054512,56.44811314,success
+"Munkedammen 21A, 4320 Lejre",11.9700884,55.59302513,success
+"Kokkesmøgen 3, 8420 Knebel",10.39981137,56.19845868,success
+"Glentevej 3, 8500 Grenaa",10.87716736,56.40973458,success
+"Skærsommervej 3, 8210 Aarhus V",10.1658878,56.17509684,success
+"Christiansgade 17, 2. tv, 5000 Odense C",10.3995556,55.39693294,success
+"Astervang 19, 9500 Hobro",,,not_found
+"Lyøvej 28, 4. tv, 2000 Frederiksberg",12.52592502,55.68204462,success
+"Nordre Strandvej 527, 3100 Hornbæk",12.42056172,56.09348081,success
+"Skovløkkevej 1A, st, 6000 Kolding",9.46352347,55.4923504,success
+"Bodalsvej 13, 8680 Ry",9.75938136,56.09144007,success
+"Fåborggade 8, 1. th, 8000 Aarhus C",10.20339463,56.14371961,success
+"Solhøjen 3, 8920 Randers NV",9.907173,56.48970203,success
+"Skærvetoften 2, 8723 Løsning",9.70095539,55.81227784,success
+"Veddevej 3C, 4190 Munke Bjergby",11.54658204,55.49972555,success
+"Hedegårdsvej 7, 4000 Roskilde",12.09982088,55.64058732,success
+"Fredensvej 7A, 3250 Gilleleje",12.26214105,56.12218995,success
+"Hjerting Strandvej 28C, 6710 Esbjerg V",8.35678574,55.52184904,success
+"Haderslevvej 83, 1, 6000 Kolding",9.46848914,55.48089708,success
+"Englandsvej 31, 4500 Nykøbing Sj",11.70748628,55.85796622,success
+"Høevej 11, 6740 Bramming",8.72591155,55.47583576,success
+"Odshøjvej 84, 8800 Viborg",9.45279863,56.46140838,success
+"Hanevænget 8, 4400 Kalundborg",11.1150887,55.67082233,success
+"Ceresbyen 33, 8000 Aarhus C",10.19122418,56.15656481,success
+"Rypevej 18, 9575 Terndrup",10.06763051,56.81598859,success
+"Skræntevej 14, 3210 Vejby",12.11537056,56.06446357,success
+"Hjedsbækvej 265, 9541 Suldrup",9.70582923,56.85419881,success
+"Henrik Steffens Vej 6, 3. th, 1866 Frederiksberg C",12.53838849,55.67792746,success
+"Platanvej 48, 1. tv, 8930 Randers NA",,,not_found
+"Hyrdetasken 38, 8700 Horsens",9.86412793,55.824389,success
+"Augustvej 7, 2860 Søborg",12.47124635,55.72905322,success
+"Himmelbjergvej 142, st, 8600 Silkeborg",9.72194668,56.12625419,success
+"Sprogøvej 32, 5610 Assens",9.90516093,55.28225075,success
+"Ceresbyen 46, 4. 1, 8000 Aarhus C",10.19253991,56.15649864,success
+"Farumvej 101, 3660 Stenløse",12.28285736,55.80501854,success
+"Alfred Hansens Have 26, 4300 Holbæk",11.73047976,55.71324935,success
+"Esther Aggebos Gade 40, 3. mf, 8000 Aarhus C",10.22660189,56.16738026,success
+"Korshøjen 90, 8240 Risskov",10.22121894,56.20172563,success
+"Holmekrogen 73, 2830 Virum",12.4848407,55.79583385,success
+"Martinsvej 16, 9000 Aalborg",9.95523043,57.02767855,success
+"Hjarnøvej 14, 7000 Fredericia",9.78184569,55.58276494,success
+"Strandtoften 5, 4671 Strøby",12.29255147,55.40178895,success
+"Skovfyrvej 9, 3730 Nexø",15.06811416,55.00058296,success
+"Lyndby Gade 27, 4070 Kirke Hyllinge",11.93256029,55.67150671,success
+"Gludsmindevej 58, 7100 Vejle",9.52135496,55.68731806,success
+"Jægervænget 5, 6800 Varde",8.46827189,55.63005309,success
+"Agertoften 26, 9200 Aalborg SV",9.90207615,57.0174559,success
+"Ãderupvej 86A, 4700 Næstved",,,not_found
+"Gl. Ãrhusvej 208, 8800 Viborg",,,not_found
+"Aage Berntsens Alle 45, 2750 Ballerup",12.37773459,55.73765037,success
+"Svingelport 9, 1, 3000 Helsingør",12.60848457,56.03114802,success
+"Engvej 15, 6320 Egernsund",9.62037333,54.90506677,success
+"Tågelundvej 5, 6040 Egtved",9.24676446,55.62510171,success
+"Granvænget 17, 8990 Fårup",9.84689038,56.54956062,success
+"Elverhøjen 1E, 2. tv, 2730 Herlev",12.4479626,55.72129082,success
+"Gondolvej 10, 4040 Jyllinge",12.10961792,55.74418872,success
+"Kallerupvej 133, 4400 Kalundborg",11.04491285,55.71991059,success
+"Slagelsevej 39, 4460 Snertinge",11.38518844,55.69609736,success
+"Dronningens Tværgade 61, 1, 1302 København K",12.58285993,55.68469995,success
+"Nørrevej 25, 4960 Holeby",11.47716367,54.71038055,success
+"Toftegårdsvej 37, 4550 Asnæs",11.50206403,55.8073135,success
+"Eskholtvænget 11, 7100 Vejle",9.55058625,55.69300483,success
+"Nestorvej 15, 9200 Aalborg SV",9.90761843,57.01619673,success
+"Liljevej 3, 7600 Struer",8.58173239,56.49045927,success
+"Tordenskjoldsgade 12B, 2. mf, 9900 Frederikshavn",10.53620468,57.4395841,success
+"Asterkærvej 17, 9240 Nibe",,,not_found
+"Fynsvej 41, 4000 Roskilde",12.09785874,55.66142926,success
+"Fredensvej 12, 4220 Korsør",11.14870543,55.32403972,success
+"Vinkelvej 14B, 4295 Stenlille",11.54601987,55.53089886,success
+"Valmuevangen 14, 9240 Nibe",9.64142765,56.97701149,success
+"Murskeen 7, 3. 108, 2630 Taastrup",12.2718162,55.65350571,success
+"Anemonen 505, 2635 Ishøj",12.30405868,55.61992383,success
+"Mårstien 6, 4500 Nykøbing Sj",11.46307664,55.95305538,success
+"Gaaseager 89, 2600 Glostrup",12.42569911,55.68115068,success
+"Engsøparken 27, 7200 Grindsted",8.89554683,55.76105721,success
+"Lundemarken 70, 4400 Kalundborg",11.069757,55.68239718,success
+"Guldsmedestien 73, st. mf, 2990 Nivå",12.50686526,55.93760869,success
+"Astre Alle 29, 7760 Hurup Thy",,,not_found
+"Sasserod 45, 5462 Morud",10.13150272,55.43780777,success
+"Havklitvej 121, 6950 Ringkøbing",8.11149104,56.08849209,success
+"Tyreengen 38, 3. tv, 4220 Korsør",11.16388393,55.32547896,success
+"Grundtvigsvej 25, 4500 Nykøbing Sj",11.66815607,55.92430206,success
+"Vigerslevvej 285B, 2. th, 2500 Valby",12.49232641,55.64884594,success
+"Pæretræsdalen 21, 3700 Rønne",14.70818976,55.10472213,success
+"Skovbo Alle 42, 2670 Greve",12.26104505,55.5997442,success
+"Romsøgade 8, st. tv, 2100 København A",,,not_found
+"A. Nielsens Vej 13, 9670 Løgstør",9.25695011,56.96469667,success
+"Amager Strandvej 142D, 1. tv, 2300 København S",12.63452949,55.65844457,success
+"Fuglsevej 21, 4960 Holeby",11.50831105,54.70907248,success
+"Kålundsvej 18, 9000 Aalborg",9.96977762,57.04408986,success
+"Offenbachsvej 73, 7500 Holstebro",8.58308981,56.3774237,success
+"Valdemarsvej 2, 2960 Rungsted Kyst",12.52111819,55.8860703,success
+"Ãlbæk Huse 30, 4174 Jystrup Midtsj",,,not_found
+"Tyreengen 52, 3. th, 4220 Korsør",11.16517613,55.3256493,success
+"Liengård 29, 9640 Farsø",9.21538573,56.68454554,success
+"Tarrelyk 8, 6200 Aabenraa",9.41594464,55.02432332,success
+"Lyngbyvej 345A, 1. tv, 2820 Gentofte",12.53408936,55.74165378,success
+"Skoleparken 75, 7500 Holstebro",8.60802331,56.37238585,success
+"Konemadevej 42, 4942 Askø",11.49214271,54.8972869,success
+"Fægangsvej 7, 8585 Glesborg",10.70711843,56.52858868,success
+"Røsnæsvej 237, 4400 Kalundborg",10.99561426,55.72846253,success
+"Doktorstien 9, 9990 Skagen",10.52959077,57.72972015,success
+"Tyttebærvej 21E, 8600 Silkeborg",9.61672033,56.13483201,success
+"Barsmark Bygade 29, 6200 Aabenraa",9.48069187,55.09044819,success
+"Marielyst Strandpark 51, 4873 Væggerløse",11.95397307,54.69796382,success
+"Lyongade 24, 2. tv, 2300 København S",12.60932873,55.66033854,success
+"Skadevænget 63, 4050 Skibby",11.85792405,55.74522743,success
+"Valby Tingsted 10, st, 2500 Valby",12.51437935,55.66539067,success
+"Møllevej 34, 9520 Skørping",9.89432629,56.83876406,success
+"Læssøegade 22, 8600 Silkeborg",9.54804193,56.1612602,success
+"Asterbrogade 55, 1, 5600 Faaborg",,,not_found
+"Krik Strandvej 120, 7770 Vestervig",8.25989411,56.77931407,success
+"Stationsvej 33, 6230 Rødekro",9.33405835,55.1337451,success
+"Grønhøjvej 42, 8462 Harlev J",10.00121044,56.1473921,success
+"Jernbanegade 31B, 2. tv, 4690 Haslev",11.96375997,55.32747991,success
+"Broholms Alle 13C, st. tv, 2920 Charlottenlund",12.58320687,55.76121296,success
+"Lergravsvej 54, st. th, 2300 København S",12.62611875,55.66365608,success
+"Ceresbyen 40, 4. 1, 8000 Aarhus C",10.19186279,56.15646323,success
+"Rådyrvænget 151, 5800 Nyborg",10.787277,55.34347605,success
+"Ãlerusen 32, 9240 Nibe",,,not_found
+"Lerbjergstien 6, 3460 Birkerød",12.365866,55.85216004,success
+"Brovænget 8, 6800 Varde",8.48247754,55.6191253,success
+"Kalleruphaven 85, 2640 Hedehusene",12.19709137,55.66074357,success
+"Ranunkelvej 2, 7080 Børkop",9.70918692,55.63768744,success
+"Torvet 6B, 1. tv, 4690 Haslev",11.96431817,55.32660357,success
+"Dalumvej 4, 8270 Højbjerg",10.17115418,56.11866792,success
+"Strandlund 12, 3250 Gilleleje",12.24151755,56.12075125,success
+"Krintelsvej 14, 7120 Vejle Ast",,,not_found
+"Lodsgården 1A, st. 8, 2791 Dragør",12.65841958,55.59204968,success
+"Lyngvejen 13, 3720 Aakirkeby",14.97084849,55.00525203,success
+"Bogholdervej 1A, 6623 Vorbasse",9.10536749,55.68310009,success
+"Valdemarsgade 49A, 1. th, 1665 København V",12.54925628,55.66847285,success
+"Klarup Kirkevej 48, 9270 Klarup",10.0518303,57.01052448,success
+"Carl Jacobsens Vej 14T, 4. th, 2500 Valby",12.51911268,55.65330153,success
+"Orionvej 1, 9200 Aalborg SV",9.90386015,57.01850682,success
+"Marienborg Alle 109, 2860 Søborg",12.50184116,55.73684312,success
+"Hovedvejen 56, 3330 Gørløse",12.1903567,55.87597261,success
+"Hans Tausens Vej 28, 9800 Hjørring",9.99604005,57.46830256,success
+"Polarisvej 3, 3210 Vejby",12.13554911,56.07855817,success
+"Under Elmene 16, 4. th, 2300 København S",12.59873157,55.66518903,success
+"Engdalsvej 71A, st. tv, 8220 Brabrand",10.12011539,56.15060365,success
+"Kastanievænget 1, 4681 Herfølge",12.14039773,55.41589686,success
+"Kindhestegade 9, 1, 4700 Næstved",11.75648553,55.23150168,success
+"Spånbjergvej 15, 4792 Askeby",12.19885144,54.91008752,success
+"Storkevænget 54, 4050 Skibby",11.87097993,55.7436637,success
+"Stagebjergparken 75, 6051 Almind",9.47946537,55.56030499,success
+"Tjørnevej 10, 7500 Holstebro",8.6497321,56.34441045,success
+"Tranbjerg Hovedgade 43, 8310 Tranbjerg J",10.13613689,56.09481061,success
+"Constantiavej 6, 9900 Frederikshavn",10.52825356,57.44899584,success
+"Hans Povlsensvej 9, 9240 Nibe",9.63607355,56.97448079,success
+"Ã Strandvej 53, 5631 Ebberup",9.9735731,55.21773428,success
+"Katholm 317, 3670 Veksø Sjælland",12.23273498,55.75497382,success
+"Præstholmvej 2, 4070 Kirke Hyllinge",11.84372605,55.68866689,success
+"Gelballevej 92, 6640 Lunderskov",9.37470222,55.47983375,success
+"Burmeistersgade 7, 5. th, 1429 København K",12.59819061,55.67537491,success
+"Tvedvej 164, 5700 Svendborg",10.62352692,55.08213616,success
+"Godthåbsvej 26, 9230 Svenstrup J",9.8461117,56.97288283,success
+"Kværndrup Vænge 34, 5772 Kværndrup",10.56528512,55.16509341,success
+"Egsmarkgårdvej 15, 8400 Ebeltoft",10.6505521,56.23335008,success
+"Lysholmparken 39, 4320 Lejre",11.955216,55.56183826,success
+"Bagsværd Hovedgade 116B, 4. a, 2880 Bagsværd",12.45586094,55.76082895,success
+"Skivevej 43, 7830 Vinderup",8.79728118,56.50430715,success
+"Fagerbo 17, 2640 Hedehusene",12.19408274,55.65884019,success
+"Adsbølvej 42, 6870 Algod",,,not_found
+"Mannehøj 82, 6600 Vejen",9.12431591,55.45822576,success
+"Bøstrupvej 37, 4270 Høng",11.2592831,55.482523,success
+"Krageholmsvej 15, 4736 Karrebæksminde",11.67087392,55.16568842,success
+"Bjarkesvej 15, 8230 Ãbyhøj",,,not_found
+"Rishøjvej 48, 3200 Helsinge",12.18736694,55.99236649,success
+"Ãrestrupsvej 18, st. mf, 9000 Aalborg",,,not_found
+"Nørrebystrand 11, 5400 Bogense",10.24122799,55.60268453,success
+"Nørregade 96, st, 5592 Ejby",9.93958335,55.43483029,success
+"Alssundvej 2, 6400 Sønderborg",9.76649027,54.91376767,success
+"Mølleparken 384, 7190 Billund",9.09729777,55.73055081,success
+"Sandkrogen 32, 2800 Kongens Lyngby",12.47703106,55.76751339,success
+"Pilevej 3, 8660 Skanderborg",9.95209567,56.03989334,success
+"Høgevej 192, 8560 Kolind",10.55426856,56.32981021,success
+"Sankt Kjelds Gade 23, 2. tv, 2100 København A",,,not_found
+"Bellisvej 37, 6700 Esbjerg",8.47534774,55.46592144,success
+"Niels Finsens Alle 88, 2860 Søborg",12.51342789,55.73703003,success
+"Salomons Brink 2, 5683 Haarby",10.11744126,55.2144973,success
+"Mølletoften 4, 6630 Rødding",9.1515794,55.42045602,success
+"Dalby Alle 16, 9230 Svenstrup J",9.88275918,56.98971972,success
+"Brogårdsvej 43, 6880 Tarm",8.49782709,55.90533547,success
+"Margretheholmsvej 70, 3. tv, 1432 København K",12.61554821,55.6864719,success
+"Byhøjdalen 61, 8380 Trige",10.16107114,56.25568265,success
+"Vindelevgård 99, 7830 Vinderup",8.78906867,56.47534612,success
+"Rødslet 63A, 9430 Vadum",9.85847359,57.12125653,success
+"Nis Petersens Gård 6, 2. th, 7400 Herning",8.97367644,56.13794862,success
+"Milanovej 4, 2. th, 2300 København S",12.62327333,55.66113838,success
+"Gørlev Landevej 16, 4270 Høng",11.26231999,55.50520767,success
+"Drosselvang 1, 3450 Allerød",12.3594869,55.88349894,success
+"Haverslevvej 77, 9520 Skørping",9.7498025,56.8200308,success
+"Fanøvej 4, 4800 Nykøbing F",11.88699339,54.75344214,success
+"Langkær Vænge 39, 3500 Værløse",12.37920139,55.78863311,success
+"Rengegade 14B, 4660 Store Heddinge",12.38910604,55.30772464,success
+"Digestien 157L, 4970 Rødby",11.32902063,54.66804104,success
+"Rødtjørnvej 41, 8471 Sabro",10.04170182,56.2081571,success
+"Kantorvænget 9, 2. 199, 8240 Risskov",10.205438,56.19972845,success
+"Willy Brandts Vej 1, st. tv, 2450 København SV",12.56253744,55.65728776,success
+"Strandvejen 12, 2, 8000 Aarhus C",,,not_found
+"Uglevej 13, st. th, 2400 København NV",12.5258658,55.70394367,success
+"Slugten 14, 9800 Hjørring",9.9789095,57.45184179,success
+"Falkevej 4, 9480 Løkken",9.72328813,57.38163414,success
+"Nørregade 3, 1, 9850 Hirtshals",9.95684766,57.59045067,success
+"Strandby Plads 1, 1. th, 6700 Esbjerg",8.43661831,55.47365826,success
+"Uglesti 7, 4305 Orø",11.82822594,55.79409232,success
+"Ribevej 3, 7171 Uldum",9.57263731,55.83108533,success
+"Græsholmvænget 12, st, 5610 Assens",9.89976118,55.2790206,success
+"Ligustervej 8, 8600 Silkeborg",9.47853445,56.15120179,success
+"Parkvej 33, st, 7400 Herning",8.99171514,56.13617352,success
+"Haslundparken 94, 9310 Vodskov",10.13247739,57.07199874,success
+"Rønhøjs Ager 14, 8300 Odder",10.1214616,55.97624311,success
+"Kildehaven 78, 8520 Lystrup",10.22708388,56.23353434,success
+"Nimbusparken 7, 2. 1, 2000 Frederiksberg",12.51520491,55.68033,success
+"Højtoftevej 9, 7100 Vejle",9.57703861,55.79746895,success
+"Humlebæk Strandvej 94, 3050 Humlebæk",12.53048928,55.9576629,success
+"Søbakkevej 4, 2. 2, 2640 Hedehusene",12.20735792,55.64423282,success
+"Fyrrelunden 33, 6840 Oksbøl",8.31092997,55.67104461,success
+"Himmelev Sognevej 79, 4000 Roskilde",12.10233882,55.65788371,success
+"Mågevænget 38, 6893 Hemmet",8.26988904,55.83799141,success
+"Poppel Alle 18, 2840 Holte",12.47834129,55.8155363,success
+"Arkonagade 15, 4. tv, 1726 København V",12.55323396,55.66529434,success
+"Vangeled 6, 3300 Frederiksværk",12.04212162,56.01033059,success
+"Præstefælledvej 45, 2770 Kastrup",12.60094372,55.6217747,success
+"Lathyrusvej 13, 8400 Ebeltoft",10.68141643,56.18778744,success
+"Langdyssegårdsvej 31, 3500 Værløse",12.32048829,55.76235765,success
+"Grønhøjgade 30, 6600 Vejen",9.13989517,55.46909096,success
+"Mejlholmgade 83, 5000 Odense C",10.38934059,55.41863695,success
+"Astergade 29A, st, 8660 Skanderborg",,,not_found
+"Nordre Jernbanevej 22, 1, 3400 Hillerød",12.30990222,55.92899288,success
+"Lendumvej 75, 9900 Frederikshavn",10.4039383,57.43760173,success
+"Holdgårdsvej 27, 7260 Sønder Omme",8.90132118,55.83573287,success
+"Banegårdsvej 31, 1, 8660 Skanderborg",9.92742915,56.03956922,success
+"Brombærhaven 6, 4070 Kirke Hyllinge",11.90021831,55.69930939,success
+"Hvedevej 4, 4671 Strøby",12.28448375,55.38181859,success
+"Pileurten 7, 5450 Otterup",10.38713062,55.52276948,success
+"Plantagevej 7, 4652 Hårlev",12.22456291,55.35183318,success
+"Flintevænget 19, 2640 Hedehusene",12.19144684,55.64555898,success
+"Hersomsvej 8, 9610 Nørager",9.63428833,56.7104841,success
+"Edithsvej 12, 8220 Brabrand",10.13969379,56.15445908,success
+"Ved Andebakken 8, 4. tv, 2000 Frederiksberg",12.52854628,55.67950713,success
+"Vinkelvej 25, 7130 Juelsminde",10.05163703,55.81861225,success
+"Piavænget 17, 5270 Odense N",10.35881254,55.4211695,success
+"Skolegade 24, 8881 Thorsø",9.78976372,56.30549128,success
+"Kolby Hovedgade 35A, 8305 Samsø",10.55628303,55.79724175,success
+"Skolevej 1, st, 4050 Skibby",11.95693464,55.74803483,success
+"Nærum Hovedgade 17, st. tv, 2850 Nærum",12.53144523,55.81867434,success
+"Teglgårdsvej 629, 2. th, 3050 Humlebæk",12.52488282,55.95708915,success
+"Magnoliavej 15, 8260 Viby J",10.18892953,56.1346675,success
+"Bakkevænget 5, 8410 Rønde",10.58513709,56.28714255,success
+"Drosselvej 5, 3000 Helsingør",12.57396162,56.04098781,success
+"Nellikevej 10, 3390 Hundested",11.88230901,55.94792579,success
+"Nykøbingvej 39, 4850 Stubbekøbing",12.03599069,54.88507916,success
+"Krekærlunds AllÃ© 28, 8340 Malling",,,not_found
+"Hagenstrupvej 42, 8860 Ulstrup",9.74361987,56.38151899,success
+"Knudshoved 24, 9370 Hals",10.34141813,57.02887586,success
+"Meldgårdvej 34, 7500 Holstebro",8.63417879,56.3740819,success
+"Vesterå 7, 1. th, 9000 Aalborg",9.91796916,57.05012528,success
+"Alleen 20, 4736 Karrebæksminde",11.64861711,55.17797189,success
+"Ãhusene 11, 4. 5, 8000 Aarhus C",,,not_found
+"Egerupvej 10, 4100 Ringsted",11.73024151,55.44789296,success
+"Lille Færgestræde 7, 4220 Korsør",11.13320441,55.33814058,success
+"Tousvej 4A, 8230 Ãbyhøj",,,not_found
+"Bresemanns AllÃ© 16, 4900 Nakskov",,,not_found
+"Peder Skrams Gade 1, 1. tv, 9000 Aalborg",9.9035685,57.05537378,success
+"Hybenvej 16, 4700 Næstved",11.73769205,55.23790945,success
+"Haraldsgade 85, 1, 2100 København A",,,not_found
+"Fittingvej 6, 6623 Vorbasse",9.09894138,55.62451737,success
+"Gerdasvej 20, 9670 Løgstør",9.21319936,56.84523936,success
+"Bentzonsvej 50B, 4. th, 2000 Frederiksberg",12.53033867,55.68665964,success
+"Klokkerhaven 2B, 2. th, 2750 Ballerup",12.35954728,55.73549099,success
+"Valby Langgade 213B, st. tv, 2500 Valby",12.48883577,55.67043037,success
+"Horsensvej 14, 1. th, 3000 Helsingør",12.59270469,56.02201557,success
+"Drejøgade 26B, 1. 102, 2100 København A",,,not_found
+"Sigurd Rings Vej 40, 5200 Odense V",10.33774003,55.39682848,success
+"Lanternevej 20, 3630 Jægerspris",11.90677534,55.92998477,success
+"Fyrrevænget 18, 6818 Ãrre",,,not_found
+"Astervej 5, 4760 Vordingborg",,,not_found
+"Hvedevænget 11, 4270 Høng",11.27924993,55.50930731,success
+"Assensvej 224D, 5642 Millinge",10.21383003,55.12949558,success
+"Tvedvangen 165, 2730 Herlev",12.42139633,55.73262565,success
+"Stadionvej 6, 6880 Tarm",8.59448225,55.87366258,success
+"Astre Parkvej 92, 4100 Ringsted",,,not_found
+"Skipperlodden 4, 4736 Karrebæksminde",11.65058316,55.18132385,success
+"Sønderstrandsvej 9, 4400 Kalundborg",11.10818763,55.65014221,success
+"Læssøegade 186. 1, 5230 Odense M",10.38344061,55.37473502,success
+"Mellemgaden 11, 6720 Fanø",8.40481795,55.4470504,success
+"Nicoline Kochs Plads 11, 6. 2, 8000 Aarhus C",10.22250191,56.16440976,success
+"Havmøllevej 7, 8400 Ebeltoft",10.77180211,56.24803084,success
+"Nitivej 20, 5. tv, 2000 Frederiksberg",12.53498887,55.69099669,success
+"Nørreled 46, 6000 Kolding",9.45846575,55.52206904,success
+"Lyngvejen 55, 6950 Ringkøbing",8.11631622,56.09274968,success
+"Vinderuphøjvej 9, 4171 Glumsø",11.73903965,55.36750983,success
+"Lindevej 17, 4850 Stubbekøbing",12.03676655,54.8879318,success
+"Humlebækvej 33, 3480 Fredensborg",12.4591864,55.96760658,success
+"Frederikslundsvej 3A, 2840 Holte",12.46625847,55.81292145,success
+"Carl Blochs Gade 59, st. mf, 8000 Aarhus C",10.1924679,56.15374437,success
+"Ulstrup Vænge 21, 4400 Kalundborg",10.96836777,55.73380561,success
+"Skovbrynet 37, 4400 Kalundborg",11.0831712,55.68913128,success
+"Vejlebrovej 97, 2. 61, 2635 Ishøj",12.36651897,55.6189293,success
+"Skovstjernevej 63, 7620 Lemvig",8.2789762,56.57712318,success
+"Enghaven 28, 8370 Hadsten",10.05023526,56.34779576,success
+"Herslev Kirkevej 55, 7000 Fredericia",9.58662097,55.58376669,success
+"Jegstrupvej 114, 8361 Hasselager",10.10881981,56.09335618,success
+"Søvang Alle 25, 1. tv, 2770 Kastrup",12.64607344,55.63848256,success
+"P.P. Arums Gade 12, 2. th, 8000 Aarhus C",,,not_found
+"Møllevangen 28, 6800 Varde",8.46606213,55.63250519,success
+"Snerlevej 3, st. th, 9000 Aalborg",9.90637793,57.0339307,success
+"Hejrevænget 10, 6893 Hemmet",8.27363767,55.83433064,success
+"Krogen 7, 8560 Kolind",10.67279021,56.33639971,success
+"Brunsegyden 16, 5690 Tommerup",10.23126891,55.34295697,success
+"Sankelmarksvej 10, 8600 Silkeborg",9.52175518,56.17419864,success
+"Hessensgade 25, 3. th, 2300 København S",12.61612017,55.66480242,success
+"Aastrup Alle 101, 6100 Haderslev",9.56070209,55.27500863,success
+"Solsortevej 44, 7760 Hurup Thy",8.39629465,56.67329624,success
+"Frimestervej 3, st. th, 2400 København NV",12.53660006,55.7065876,success
+"Nordostvej 11, 9300 Sæby",10.49561574,57.21428596,success
+"Revlingbjerg 3, 6400 Sønderborg",9.80015058,54.92038719,success
+"Toksværd Bygade 57, 4684 Holmegaard",11.88376896,55.24907994,success
+"Genvej 6, 6950 Ringkøbing",8.11596951,56.08516511,success
+"Puglundvej 23, 6800 Varde",8.75327357,55.63693949,success
+"Mejerivej 34A, 4700 Næstved",11.77627779,55.25159968,success
+"Boesensgade 11, st, 5800 Nyborg",,,not_found
+"Nis Petersens Vej 21, 7500 Holstebro",8.63076815,56.34918593,success
+"Tranegårdsvej 9B, 2900 Hellerup",12.57095931,55.73989541,success
+"Sverrigsvej 3, 4550 Asnæs",11.4988846,55.84405524,success
+"Præstevænget 10, 6500 Vojens",9.30633876,55.24598626,success
+"Søndergade 43, 6520 Toftlund",9.06579297,55.18779177,success
+"Glatved Strandvej 39, 8444 Balle",10.86743046,56.31059545,success
+"Skovløkken 14, 5580 Nørre Aaby",9.83717488,55.40612909,success
+"Drost Hessels Vej 6, 8800 Viborg",9.41935383,56.46106109,success
+"Obstrupengen 16, 8320 Mårslet",10.14455679,56.08351447,success
+"Balevej 9, 8544 Mørke",10.39488072,56.32475692,success
+"Store Torvegade 131. 4, 3700 Rønne",14.70325879,55.11043272,success
+"H.C. Lumbyes Vej 83, 5270 Odense N",10.37484615,55.4624728,success
+"Rise Bygade 20, 6230 Rødekro",9.33417372,55.05842055,success
+"Jernbanegade 12, 2, 6933 Kibæk",8.85272004,56.03281787,success
+"Biltris Gade 23, 4070 Kirke Hyllinge",11.93183003,55.72409268,success
+"Isfuglen 9, 8940 Randers SV",10.01679456,56.44763817,success

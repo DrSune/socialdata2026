@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pulse of San Francisco: Opportunity vs. Enforcement</title>
+    <style>
+        body { 
+            font-family: 'Georgia', serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 2rem; 
+            background-color: #f9f9f9;
+        }
+        h1 { font-family: 'Helvetica Neue', sans-serif; font-size: 2.5rem; color: #111; margin-bottom: 0.5rem; }
+        .subtitle { font-style: italic; color: #666; font-size: 1.2rem; margin-bottom: 2rem; }
+        p { margin-bottom: 1.5rem; text-align: justify; }
+        .figure-container { margin: 3rem 0; background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .caption { 
+            font-size: 0.95rem; 
+            color: #555; 
+            border-left: 4px solid #d32f2f; 
+            padding-left: 1rem; 
+            margin-top: 1rem; 
+            font-style: italic;
+        }
+        iframe { width: 100%; border: none; min-height: 500px; }
+        img { width: 100%; height: auto; border-radius: 4px; }
+        .intro-box { background: #e3f2fd; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; border: 1px solid #bbdefb; }
+        .intro-box h2 { margin-top: 0; font-size: 1.2rem; color: #0d47a1; }
+        .footer { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #ddd; font-size: 0.9rem; color: #777; }
+    </style>
+</head>
+<body>
+
+    <h1>The Pulse of San Francisco</h1>
+    <p class="subtitle">Decoupling the Rhythms of Opportunity and Enforcement in SF Crime Data</p>
+
+    <div class="intro-box">
+        <h2>About the Dataset</h2>
+        <p>This analysis utilizes the official San Francisco Police Department (SFPD) crime incident reports, spanning from 2003 to late 2025. The data includes over 2 million records, detailing the time, location, and category of each reported incident. For this story, we focus on "Personal Focus Crimes"—a subset of categories including Larceny, Burglary, and Drug Offenses that provide the clearest window into the city's social dynamics.</p>
+    </div>
+
+    <p>San Francisco is a city of distinct rhythms. From the morning fog to the neon lights of the Mission, the city breathes in patterns that are mirrored in its crime data. But when we look closer, we find that not all crimes follow the same heartbeat. Some crimes are driven by <strong>opportunity</strong>—the simple intersection of a motivated actor and a vulnerable target. Others are driven by <strong>enforcement</strong>—the strategic choices of where and when to police.</p>
+
+    <div class="figure-container">
+        <img src="hourly_rhythm.svg" alt="Hourly crime rhythm chart">
+        <div class="caption">
+            <strong>Figure 1: The Daily Signature of Crime.</strong> Notice the sharp divergence in temporal patterns. Larceny (property theft) peaks during the afternoon, tracking the movements of shoppers and tourists. In contrast, Burglary spikes in the early hours of the morning, utilizing the cover of darkness. Most interestingly, Drug Offenses show a "manufactured" peak in the late afternoon, often reflecting the timing of police shifts and targeted buy-bust operations rather than a natural surge in drug use.
+        </div>
+    </div>
+
+    <p>The geographic "hotspots" of the city tell a similar story of divergence. While property crimes like Larceny are spread across every major commercial corridor and tourist landmark, enforcement-driven crimes are remarkably concentrated. This concentration often says more about the city's policing priorities and neighborhood socioeconomic boundaries than the actual prevalence of illegal activity across the 49 square miles of San Francisco.</p>
+
+    <div class="figure-container">
+        <iframe src="drug_heatmap.html"></iframe>
+        <div class="caption">
+            <strong>Figure 2: The Geography of Enforcement.</strong> This heatmap of Drug Offenses (2018-2025) reveals an extreme concentration in the Tenderloin and South of Market (SoMa) districts. While these areas are centers of social struggle, the near-total absence of drug "incidents" in wealthier residential neighborhoods suggests a focus on street-level enforcement in specific public spaces, rather than a lack of drug use in other parts of the city.
+        </div>
+    </div>
+
+    <p>Perhaps the most compelling evidence of this decoupling is found in the long-term trends. As we transitioned through the COVID-19 pandemic and into the "new normal" of 2024-2025, the trends for property crime and drug enforcement began to move independently of one another. This "decoupling" serves as a critical reminder that a "spike" in crime statistics can often be a "spike" in police reporting or policy shifts.</p>
+
+    <div class="figure-container">
+        <iframe src="interactive_trends.html"></iframe>
+        <div class="caption">
+            <strong>Figure 3: Decoupling Trends (2003-2025).</strong> Explore the interactive timeline above. While Larceny Theft experienced a dramatic crash during the 2020 lockdowns, Drug Offenses have remained on a separate trajectory, often driven by multi-agency crackdowns or changes in district attorney policies. Use the legend to toggle categories and observe how the "Pulse of the City" changed during the pandemic.
+        </div>
+    </div>
+
+    <h2>A Note on "Dirty Data"</h2>
+    <p>As we interpret these patterns, we must heed the warnings of researchers like Richardson et al. (2019). Crime data is never a perfect mirror of reality; it is a mirror of <em>recorded</em> incidents. When we see a cluster of drug arrests, we are seeing the output of a policing system that chooses to look in specific places at specific times. To call this "crime" without acknowledging "enforcement" is to tell only half the story. As data narrators, our responsibility is to show not just the "what," but the "why"—acknowledging the limitations of our datasets and the human decisions that create every single row in our CSV files.</p>
+
+    <div class="footer">
+        <p><strong>References:</strong><br>
+        - San Francisco Police Department (SFPD) Incident Reports (2003-Present).<br>
+        - Richardson, R., Schultz, J. M., & Crawford, K. (2019). Dirty Data, Bad Predictions: How Civil Rights Violations Impact Algorithmic Policing.<br>
+        - Segel, E., & Heer, J. (2010). Narrative Visualization: Telling Stories with Data.</p>
+    </div>
+
+</body>
+</html>

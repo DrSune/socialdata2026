@@ -1,51 +1,58 @@
 import pandas as pd
 import plotly.express as px
-import numpy as np
 
 def create_final_interactive_viz():
-    df = pd.read_parquet('full_housing_data.parquet')
+    df = pd.read_csv('final_viz_data.csv')
     
-    # Take a representative sample from the crisis era
-    df_sample = df[df['date'] >= '2022-01-01'].sample(3000).copy()
+    # Sort Efficiency Era for better visualization
+    era_order = ['G/F (Pre-Insulation)', 'E (Minimal)', 'D (Standard)', 'C (Modern)', 'B/A (High Efficiency)']
+    df['Efficiency_Era'] = pd.Categorical(df['Efficiency_Era'], categories=era_order, ordered=True)
+    df = df.sort_values('Efficiency_Era')
+
+    # To make the narrative punchier, let's simplify nature proximity to a binary for the main comparison,
+    # or use a Box Plot with points to clearly show the shift in median and distribution
     
-    # Simulate Solar/Renewable Presence based on BBR probability
-    # In reality, this would be a join with MasterDataForPV
-    df_sample['Renewable_System'] = np.random.choice(['None', 'Solar/Heat Pump'], size=len(df_sample), p=[0.85, 0.15])
-    
-    # Calculate price deviation from city median (Residuals)
-    city_medians = df_sample.groupby('city')['sqm_price'].transform('median')
-    df_sample['Price_Deviation_%'] = ((df_sample['sqm_price'] - city_medians) / city_medians) * 100
-
-    def get_efficiency_era(year):
-        if year < 1961: return 'G/F (Pre-Insulation)'
-        if year < 1977: return 'E (Minimal)'
-        if year < 1995: return 'D (Standard)'
-        if year < 2010: return 'C (Modern)'
-        return 'B/A (High Efficiency)'
-
-    df_sample['Efficiency_Era'] = df_sample['year_build'].apply(get_efficiency_era)
-
-    # Create Interactive Strip Plot
-    fig = px.strip(df_sample, 
-                   x="Efficiency_Era", 
-                   y="Price_Deviation_%", 
-                   color="Renewable_System",
-                   hover_data=['city', 'year_build', 'purchase_price'],
-                   title="The 'Green Buffer': How Renewables Offset the Insulation Penalty",
-                   category_orders={"Efficiency_Era": ['G/F (Pre-Insulation)', 'E (Minimal)', 'D (Standard)', 'C (Modern)', 'B/A (High Efficiency)']},
-                   labels={"Price_Deviation_%": "Price Premium over City Median (%)"})
+    # Create Box plot with points to show distributions clearly
+    fig = px.box(df, 
+                 x="Efficiency_Era", 
+                 y="Price_Deviation_%", 
+                 color="Nature_Proximity",
+                 points="all", # Shows all points alongside the box
+                 hover_data=['city', 'year_build', 'purchase_price', 'distance_to_nature_m'],
+                 title="The 'Green Buffer': Quantifying the Nature Premium",
+                 color_discrete_map={
+                     'Immediate (<1km)': '#1a9850',
+                     'Close (1-5km)': '#a6d96a',
+                     'Nearby (5-10km)': '#fdae61',
+                     'Distant (>10km)': '#d73027'
+                 },
+                 labels={
+                     "Price_Deviation_%": "Price Premium vs Local Median (%)",
+                     "Efficiency_Era": "Building Efficiency Era",
+                     "Nature_Proximity": "Distance to Nature"
+                 })
 
     fig.update_layout(
         template='plotly_white',
         hovermode='closest',
-        yaxis=dict(zeroline=True, zerolinewidth=2, zerolinecolor='black')
+        boxmode='group', # Group boxes by color
+        yaxis=dict(zeroline=True, zerolinewidth=2, zerolinecolor='black'),
+        font=dict(family="Georgia, serif"),
+        legend=dict(
+            title="Nature Proximity",
+            orientation="h",
+            yanchor="bottom",
+            y=1.02,
+            xanchor="right",
+            x=1
+        )
     )
 
-    # Add a horizontal line at 0 for reference
-    fig.add_hline(y=0, line_dash="dash", line_color="black")
+    # Add a horizontal line at 0 (the local median benchmark)
+    fig.add_hline(y=0, line_dash="dash", line_color="black", annotation_text="Local Median Price", annotation_position="bottom right")
 
     fig.write_html('docs/interactive_analysis.html', include_plotlyjs='cdn')
-    print("Interactive plot saved to docs/interactive_analysis.html")
+    print("Interactive Box plot saved to docs/interactive_analysis.html")
 
 if __name__ == "__main__":
     create_final_interactive_viz()
