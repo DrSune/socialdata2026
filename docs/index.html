@@ -20,7 +20,8 @@
         .btn-link { display: inline-block; padding: 1.5rem 3rem; background: #111; color: white; text-decoration: none; border-radius: 0; margin-top: 3rem; font-weight: bold; transition: 0.3s; }
         .btn-link:hover { background: #444; }
         blockquote { font-size: 1.5rem; font-style: italic; color: #444; border-left: 4px solid #111; padding-left: 2rem; margin: 4rem 0; }
-        .divider { height: 1px; background: #eee; margin: 4rem 0; }
+        .divider { height: 5px; background: #111; margin: 6rem 0; }
+        .candidate-card { background: #fff; border: 1px solid #eee; padding: 2rem; margin-bottom: 4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
     </style>
 </head>
 <body>
@@ -33,48 +34,53 @@
     </div>
 
     <div class="narrative">
-        <p><span class="dropcap">F</span>or thirty years, Danish house prices moved in a synchronized dance. Location mattered, of course, but the building itself was often a secondary variable. That changed in the winter of 2022. When energy prices spiked, the "Energimærke" (Energy Label) stopped being a technical formality and became a financial weapon.</p>
+        <p><span class="dropcap">F</span>or thirty years, Danish house prices moved in a synchronized dance. Location mattered, of course, but the building itself was often a secondary variable. That changed in the winter of 2022. When energy prices spiked, the "Energimærke" stopped being a technical formality and became a financial weapon.</p>
         
-        <p>Our analysis of 1.5 million sales reveals a structural shift: a "Market Decoupling" where the building's technical performance now dictates its equity growth as much as its zip code.</p>
+        <p>Our analysis of 1.5 million sales reveals a structural shift: a "Market Decoupling" where the building's technical performance dictates its equity growth as much as its zip code.</p>
     </div>
 
     <div class="viz-container">
-        <h3>1. The Shift in Sentiment</h3>
+        <h3>1. The Shift in Sentiment (The "Gold Standard")</h3>
         <img src="ridges_pre.png" alt="Pre-Crisis Ridges" style="width: 100%; margin-bottom: 2rem;">
         <img src="ridges_peak.png" alt="Crisis Ridges" style="width: 100%;">
-        <p class="caption">Figure 1: Ridgeline distributions of price per sqm by building era. In the stable 2018-19 market (top), all building eras shared overlapping price distributions. By the 2022-23 crisis peak (bottom), the market decoupled: legacy housing (G-E) saw its price floor drop significantly, while modern builds (B-A) maintained their equity.</p>
+        <p class="caption">Figure 1: Ridgeline distributions of price per sqm by building era. This shows the authentic market decoupling: legacy housing distributions (bottom) flattened and shifted left in 2022-23.</p>
     </div>
 
-    <div class="narrative">
-        <h2>The Geography of Vulnerability</h2>
-        <p>This decoupling isn't just a number—it's a map. The "Insulation Penalty" hit hardest in the rural outskirts where individual natural gas and oil boilers are the norm. In the interactive movie below, we track the median price of these vulnerable G/F era homes across Denmark's administrative areas. Watch how the "Stress" (red bubbles) intensifies as the crisis enters full swing in 2022.</p>
-    </div>
+    <div class="divider"></div>
+    <h2>Top-Tier Candidate Lab</h2>
+    <p>Below are 4 visualization candidates for slots 2 and 3. I have selected the most advanced patterns from the course for your review.</p>
 
-    <div class="viz-container" style="background: #f0f0f0; padding: 2rem; border-radius: 4px;">
-        <h3>2. The Vulnerability Movie</h3>
+    <div class="candidate-card">
+        <h3>Candidate A: The Temporal Movie (Current Figure 2)</h3>
+        <p><i>Inspiration: Week 5 (Heatmap Movies)</i></p>
         <iframe src="vulnerability_movie.html" width="100%" height="750px" frameborder="0"></iframe>
-        <p class="caption">Figure 2: Animated regional heatmap. Each bubble represents the median price of the most inefficient building stock (G/F era). Scrub through the timeline to see the market contraction and the shifting price floor across Denmark's key regions.</p>
+        <p class="caption">Strong for showing "Where" the stress happened over time. Fixed overlap and text issues.</p>
     </div>
 
-    <blockquote>
-        "A drafty window was once a charm. In 2022, it became a liability."
-    </blockquote>
-
-    <div class="narrative">
-        <h2>The Anxiety Index</h2>
-        <p>Finally, we look at the <i>negotiation power</i> in the market. Using the course's temporal heatmap techniques, we've mapped the median "Price Haggling"—the percentage difference between the initial offer and the final purchase price. While modern homes (D-A) show a steady, predictable negotiation rhythm, the "Legacy" building stock (G-E) shows a dramatic surge in haggling intensity during the 2022-23 crisis. This "Anxiety Index" reveals the hidden friction in the market, where every drafty window became a point of contention.</p>
-    </div>
-
-    <div class="viz-container">
-        <h3>3. The Pulse of Negotiation</h3>
+    <div class="candidate-card">
+        <h3>Candidate B: The Anxiety Heatmap (Current Figure 3)</h3>
+        <p><i>Inspiration: Week 2 (Temporal Rhythms)</i></p>
         <img src="market_rhythms.png" alt="Anxiety Index Heatmap" style="width: 100%;">
-        <p class="caption">Figure 3: Temporal Heatmap (Year vs. Month) of Price Haggling. This visualization tracks the median percentage reduction from offer to sale. Notice how the 'Legacy' housing (right) turns deep red during the energy crisis, with buyers successfully demanding 5-10% discounts to compensate for future energy costs—a level of friction rarely seen in the modern sector (left).</p>
+        <p class="caption">Strong for showing the "Hidden Friction" (Haggling) that doesn't show up in final prices.</p>
+    </div>
+
+    <div class="candidate-card">
+        <h3>Candidate C: The Polar Price Compass (NEW)</h3>
+        <p><i>Inspiration: Week 3 (Exercise 2.2 - Polar Charts)</i></p>
+        <iframe src="candidate_polar.html" width="100%" height="600px" frameborder="0"></iframe>
+        <p class="caption">Visualizes the "Seasonal Squeeze". Notice how Legacy homes (red) face extreme haggling specifically in the winter months of the crisis.</p>
+    </div>
+
+    <div class="candidate-card">
+        <h3>Candidate D: The Parallel Resilience Flow (NEW)</h3>
+        <p><i>Inspiration: Week 6 (Parallel Coordinates/Categories)</i></p>
+        <iframe src="candidate_parallel.html" width="100%" height="600px" frameborder="0"></iframe>
+        <p class="caption">The ultimate "Flare" plot. Allows the reader to trace the flow from building age to geographic area to the final market outcome.</p>
     </div>
 
     <div class="narrative">
         <h2>Conclusion</h2>
-        <p>The energy crisis of 2022 didn't just change our utility bills; it re-indexed the value of the Danish home. As we move toward a carbon-neutral future, the "Decoupling" we've observed is likely permanent. The home of the future is no longer just a place to live—it is a technical asset, and its resilience is defined by its walls.</p>
-        
+        <p>The energy crisis re-indexed the Danish home. Resilience is now a technical asset defined by your walls.</p>
         <center>
             <a href="https://github.com/suneman/socialdata2026/blob/main/Final_Project_Explainer.ipynb" class="btn-link">TECHNICAL EXPLAINER & DATA PIPELINE</a>
         </center>
