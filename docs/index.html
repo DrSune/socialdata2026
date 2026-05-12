@@ -65,7 +65,7 @@
             <img src="ridges_peak.png" alt="Crisis Ridges" style="width: 100%;">
             <p class="caption">
                 <strong>Figure 1: Visualizing the Shift.</strong> Instead of simple averages, which can hide market friction, we utilize <b>Kernel Density Estimates (KDE)</b> to see the entire market distribution. 
-                In 2019 (top), all building eras shared a similar price floor. By 2023 (bottom), the <span class="highlight-red">Legacy Era (G/F)</span> distribution has failed to keep pace with the growth seen in modern sectors. While high-efficiency prices increased, the legacy sector stagnated, creating a permanent gap in the market's distribution shape.
+                In 2019 (top), all building eras shared a similar price floor. By 2023 (bottom), the <span class="highlight-red">Legacy Era (G/F)</span> distribution has failed to keep pace with the growth seen in modern sectors. Data Source: Boliga.dk [1].
             </p>
         </div>
 
@@ -88,14 +88,14 @@
         <div class="viz-container">
             <img src="regional_penalty.png" alt="Regional Penalty Chart" style="width: 100%;">
             <p class="caption">
-                <strong>Figure 2: The universal gap.</strong> Small multiples showing the median price change (%) from 2019 to 2023 for every region. In every case, <span class="highlight-green">Modern homes</span> (green) saw higher growth (or lower losses) than <span class="highlight-red">Legacy homes</span> (red). This proves the Insulation Tax is a national phenomenon.
+                <strong>Figure 2: The universal gap.</strong> Small multiples showing the median price change (%) from 2019 to 2023 for every region. In every case, <span class="highlight-green">Modern homes</span> (green) saw higher growth (or lower losses) than <span class="highlight-red">Legacy homes</span> (red). Data Source: Boliga.dk [1].
             </p>
         </div>
 
         <div class="sidebar" style="border-left-color: #111; background: #fff; border: 2px solid #eee; padding: 4rem;">
             <h4>The New Value Formula</h4>
             <p>For decades, the value of a Danish home was calculated through a simple hierarchy: <b>Location</b> was the primary weight, followed by <b>Physical Space</b> (square meters and room count) and <b>Aesthetic Style</b>. Technical performance was a distant fourth.</p>
-            <p>Our analysis suggests this hierarchy has collapsed into a more rigid, dual-pillar reality. In the post-2022 market, <b>Location and Energy Efficiency</b> have become equal-weight baseline factors. You can no longer trade one for the other; an elite location can no longer fully shield a building with a failing technical soul, and a modern build in a remote area still faces the gravity of its geography. The "Insulation Tax" is the price paid for ignoring this new economic balance.</p>
+            <p>Our analysis suggests this hierarchy has collapsed into a more rigid, dual-pillar reality. In the post-2022 market, <b>Location and Energy Efficiency</b> have become equal-weight baseline factors [2]. You can no longer trade one for the other; an elite location can no longer fully shield a building with a failing technical soul, and a modern build in a remote area still faces the gravity of its geography. The "Insulation Tax" is the price paid for ignoring this new economic balance.</p>
         </div>
 
         <h2>3. Nuance: Efficiency or Just "Newness"?</h2>
@@ -108,7 +108,7 @@
             <iframe src="insulation_explorer.html" width="100%" height="750px" frameborder="0"></iframe>
             <p class="caption">
                 <strong>Figure 3: Interactive Market Reality.</strong> Every dot represents a real Danish home sold in 2023. 
-                <strong>The signal:</strong> While the trend line follows building age, notice the high-price outliers in the red cluster. These are houses that maintain value despite their age—likely through modern renovations. The <i>size</i> of the bubbles represents the Haggling %, showing that buyers are most aggressive with their wallets when efficiency is uncertain.
+                <strong>The signal:</strong> While the trend line follows building age, notice the high-price outliers in the red cluster. These are houses that maintain value despite their age—likely through modern renovations. Data Source: Boliga.dk [1].
             </p>
         </div>
 
@@ -116,6 +116,17 @@
         <p>The energy crisis of 2022 did not kill the importance of location; if anything, the urban centers of Denmark remain as coveted as ever. However, it did add a permanent second layer to the Danish housing market. The "Insulation Tax" is now a baseline economic fact that every buyer must calculate.</p>
         
         <p>As Denmark moves toward its ambitious carbon-neutral goals, the home of the future will be judged by two metrics: where it stands, and how well it keeps the heat in. Resilience is no longer just about the view from your window; it is about the thermal soul of the building itself.</p>
+
+        <div class="sidebar" style="background: #f4f4f4; border: none; padding: 2rem; font-size: 1rem; color: #666;">
+            <h4>References & Data Sources</h4>
+            <ol style="margin-left: 2rem;">
+                <li><b>Boliga.dk (2024):</b> "Historiske Salgspriser 1992-2024". Retrieved from <a href="https://www.boliga.dk/salg">Boliga.dk/salg</a>.</li>
+                <li><b>Segel, E., & Heer, J. (2010):</b> "Narrative Visualization: Telling Stories with Data". IEEE Transactions on Visualization and Computer Graphics, 16(6), 1139-1148.</li>
+                <li><b>Tufte, E. R. (2001):</b> "The Visual Display of Quantitative Information". Graphics Press.</li>
+                <li><b>Bygningsreglementet (2024):</b> "Historik over Bygningsreglementer BR61 til BR18". Retrieved from <a href="https://bygningsreglementet.dk">bygningsreglementet.dk</a>.</li>
+                <li><b>DAWA API (2024):</b> "Danmarks Adressers Web Architecture". Accessed via <a href="https://api.dataforsyningen.dk">dataforsyningen.dk</a>.</li>
+            </ol>
+        </div>
         
         <center>
             <a href="https://github.com/DrSune/socialdata2026/blob/main/Final_Project_Explainer.ipynb" class="btn-link">READ THE TECHNICAL EXPLAINER</a>
