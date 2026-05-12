@@ -3,84 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Insulation Tax | Social Data 2026</title>
+    <title>The Insulation Tax: A New Danish Reality | Social Data 2026</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <style>
-        body { font-family: 'Georgia', serif; line-height: 1.8; color: #1a1a1a; background-color: #f9f9f9; }
-        .container { background: white; padding: 6rem; margin-top: 3rem; margin-bottom: 3rem; border-radius: 2px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); max-width: 900px; }
-        h1, h2, h3 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 800; color: #111; letter-spacing: -1px; }
-        .hero { text-align: center; border-bottom: 1px solid #eee; margin-bottom: 5rem; padding-bottom: 3rem; }
-        .hero h1 { font-size: 5.5rem; line-height: 1; margin-bottom: 2rem; }
-        .author { text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; color: #888; font-weight: bold; }
-        .viz-container { margin: 6rem 0; text-align: center; }
+        body { font-family: 'Georgia', serif; line-height: 1.9; color: #1a1a1a; background-color: #f7f7f7; -webkit-font-smoothing: antialiased; }
+        .container { background: white; padding: 8rem; margin-top: 4rem; margin-bottom: 4rem; border-radius: 4px; box-shadow: 0 20px 50px rgba(0,0,0,0.05); max-width: 1000px; }
+        
+        /* Typography */
+        h1, h2, h3 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; color: #111; letter-spacing: -2px; line-height: 1.1; }
+        h1 { font-size: 6.5rem; text-align: center; margin-bottom: 3rem; }
+        h2 { font-size: 3.5rem; margin-top: 6rem; margin-bottom: 2rem; border-bottom: 8px solid #111; display: inline-block; letter-spacing: -1px; }
+        h3 { font-size: 2.2rem; margin-top: 4rem; color: #444; }
+        p { margin-bottom: 2.5rem; font-size: 1.4rem; }
+        
+        /* Components */
+        .hero { text-align: center; margin-bottom: 8rem; border-bottom: 1px solid #eee; padding-bottom: 4rem; }
+        .author { text-transform: uppercase; letter-spacing: 3px; font-size: 0.9rem; color: #999; font-weight: bold; margin-bottom: 1rem; }
+        .dropcap { float: left; font-size: 95px; line-height: 1; padding-top: 10px; padding-right: 15px; font-weight: 900; color: #111; }
+        blockquote { font-size: 2.2rem; font-style: italic; color: #222; border-left: 10px solid #d73027; padding-left: 3rem; margin: 6rem 0; line-height: 1.3; }
+        
+        .viz-container { margin: 8rem 0; text-align: center; background: #fff; }
         .viz-container img, .viz-container iframe { max-width: 100%; border: none; }
-        .caption { font-size: 0.9rem; color: #666; margin-top: 2rem; font-style: italic; max-width: 700px; margin-left: auto; margin-right: auto; border-top: 1px solid #eee; padding-top: 1rem; text-align: left; }
-        .narrative { font-size: 1.25rem; max-width: 750px; margin: 0 auto; }
-        .dropcap { float: left; font-size: 85px; line-height: 1; padding-top: 10px; padding-right: 12px; font-weight: bold; color: #1a1a1a; }
-        .btn-link { display: inline-block; padding: 1.5rem 3rem; background: #111; color: white; text-decoration: none; border-radius: 0; margin-top: 3rem; font-weight: bold; transition: 0.3s; }
-        .btn-link:hover { background: #444; }
-        blockquote { font-size: 1.6rem; font-style: italic; color: #333; border-left: 4px solid #111; padding-left: 2rem; margin: 4rem auto; max-width: 750px; }
+        .caption { font-size: 1rem; color: #666; margin-top: 2.5rem; font-style: italic; max-width: 800px; margin-left: auto; margin-right: auto; border-top: 1px solid #eee; padding-top: 1.5rem; text-align: left; line-height: 1.5; }
+        
+        .sidebar { background: #f9f9f9; padding: 3rem; border-left: 4px solid #1a9850; margin: 4rem 0; font-size: 1.1rem; color: #444; }
+        .sidebar h4 { font-size: 1.4rem; font-weight: bold; margin-bottom: 1rem; text-transform: uppercase; color: #111; }
+        
         .highlight-red { color: #d73027; font-weight: bold; }
         .highlight-green { color: #1a9850; font-weight: bold; }
+        .btn-link { display: inline-block; padding: 2rem 4rem; background: #111; color: white; text-decoration: none; border-radius: 0; margin-top: 4rem; font-weight: bold; transition: 0.3s; font-size: 1.2rem; }
+        .btn-link:hover { background: #d73027; color: white; }
+
+        @media (max-width: 750px) {
+            .container { padding: 3rem; }
+            h1 { font-size: 3.5rem; }
+            h2 { font-size: 2.5rem; }
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="hero">
-        <p class="author">Special Report | May 2026</p>
+    <header class="hero">
+        <p class="author">Special Investigative Report | May 2026</p>
         <h1>The Insulation Tax</h1>
-        <p style="font-size: 1.6rem; color: #555;">Why Walls now matter more than Zip Codes in the Danish housing market.</p>
-    </div>
+        <p style="font-size: 2rem; color: #666; max-width: 800px; margin: 0 auto; line-height: 1.4;">How a legacy of leaky windows and thin walls became the most expensive liability in the Danish housing market.</p>
+    </header>
 
-    <div class="narrative">
-        <p><span class="dropcap">F</span>or thirty years, the rules of Danish real estate were simple: <i>Location, Location, Location.</i> But in the winter of 2022, a new variable seized control. As energy prices skyrocketed, the "Energimærke" (Energy Label) stopped being a technical formality and became a financial weapon. Overnight, a drafty window transformed from a "charm" into a permanent equity penalty.</p>
+    <article class="narrative">
+        <p><span class="dropcap">F</span>or over thirty years, the rules of Danish real estate were governed by a simple, unshakeable mantra: <i>Location, Location, Location.</i> Whether it was a thatched cottage in the wind-swept marshes of Jutland or a modernist villa in the leafy suburbs of Gentofte, your zip code was your destiny. The building itself—its age, its materials, its technical soul—was often seen as a secondary variable, a "charm" to be polished or a renovation project for the weekend warrior.</p>
         
-        <p>Our analysis of 1.5 million sales reveals a structural shift that we call <b>The Insulation Tax</b>: a reality where the building's age and technical performance now dictate its price resilience more than its municipality.</p>
-    </div>
+        <p>That era ended in the winter of 2022. As the global energy market fractured and heating prices spiraled out of control, the <i>Energimærke</i> (Energy Label) was weaponized. Almost overnight, a home's efficiency transformed from a bureaucratic footnote in a sales brochure into a ruthless financial judge. We are witnessing the birth of <b>The Insulation Tax</b>: a structural re-indexing of wealth where the thickness of your walls now dictates your price resilience more than your proximity to the city center.</p>
 
-    <div class="viz-container">
-        <h3>1. The Great Decoupling</h3>
-        <img src="ridges_pre.png" alt="Pre-Crisis Ridges" style="width: 100%; margin-bottom: 2rem;">
-        <img src="ridges_peak.png" alt="Crisis Ridges" style="width: 100%;">
-        <p class="caption">Figure 1: Ridgeline distributions of price per sqm. In the stable 2018-19 market (top), all building eras shared a similar price floor. By 2023 (bottom), the market <span class="highlight-red">decoupled</span>: Legacy housing (G-E) saw its value distribution flatten and shift left, while modern builds (B-A) remained resilient. This is the visual proof of a two-tier market.</p>
-    </div>
+        <h2>1. Establishing the Fact</h2>
+        <p>To understand the scale of this shift, we analyzed 1.5 million housing sales spanning three decades. By comparing the stable, pre-crisis market of 2019 with the peak volatility of 2023, the data reveals a startling "Great Decoupling."</p>
+        
+        <p>In the past, Danish house prices moved in a synchronized pulse. When the market went up, all eras rose together; when it dipped, they fell in unison. Figure 1 shows that this synchronization has shattered. Legacy building stock (G, F, and E energy labels) didn't just lose value—they lost their market footing entirely.</p>
 
-    <div class="narrative">
-        <h2>Geography is No Shield</h2>
-        <p>One might assume this penalty is localized to rural areas. The data says otherwise. Whether in the heart of Copenhagen or the coast of Jutland, the gap between "Legacy" and "Modern" builds has widened. The <i>Insulation Tax</i> is a universal phenomenon, hitting every administrative region in Denmark.</p>
-    </div>
+        <div class="viz-container">
+            <img src="ridges_pre.png" alt="Pre-Crisis Ridges" style="width: 100%; margin-bottom: 2rem;">
+            <img src="ridges_peak.png" alt="Crisis Ridges" style="width: 100%;">
+            <p class="caption">
+                <strong>Figure 1: The Great Decoupling.</strong> These ridgeline plots show the distribution of sale prices (DKK per sqm) categorized by the building's efficiency era. 
+                In 2019 (top), the distributions overlap significantly, indicating a shared market floor. By 2023 (bottom), the <span class="highlight-red">Legacy Era (G/F)</span> distribution has flattened and shifted violently to the left, while the <span class="highlight-green">Modern Era (B/A)</span> has maintained its peak.
+            </p>
+        </div>
 
-    <div class="viz-container">
-        <h3>2. The Universal Penalty</h3>
-        <img src="regional_penalty.png" alt="Regional Penalty Chart" style="width: 100%;">
-        <p class="caption">Figure 2: Small Multiples of Price Growth (2019 vs 2023). In every single region, <span class="highlight-green">Modern homes</span> (green) outperformed <span class="highlight-red">Legacy homes</span> (red). In areas like North Jutland and South Zealand, the growth gap exceeds 10%, proving that location cannot save a poorly insulated asset.</p>
-    </div>
+        <div class="sidebar">
+            <h4>How we separate "Energy Eras"</h4>
+            <p>Because official energy labels are often missing from historical data, we use <b>Danish Building Regulations (BR)</b> as a scientific proxy. Buildings are categorized by the laws in place when they were built:</p>
+            <ul>
+                <li><b>G/F (Pre-1961):</b> No national insulation standards existed.</li>
+                <li><b>E (1961-1977):</b> Basic requirements before the 1973 Oil Crisis.</li>
+                <li><b>D (1977-1995):</b> The BR77 era, a massive tightening of standards.</li>
+                <li><b>C-A (Post-1995):</b> The BR95 era and beyond, focusing on holistic energy frames.</li>
+            </ul>
+        </div>
 
-    <blockquote>
-        "In the new Danish market, your energy label is your new location."
-    </blockquote>
+        <h2>2. A Universal Penalty</h2>
+        <p>One might suspect that this "Insulation Tax" is merely a proxy for the urban-rural divide—that only people in remote areas with expensive oil boilers are suffering. The data, however, tells a more disturbing story. Whether in the high-demand "Region Hovedstaden" or the rural expanses of "North Jutland," the gap is widening.</p>
+        
+        <p>Our regional analysis shows that <b>modern homes outperformed legacy homes in every single administrative area of Denmark.</b> In some regions, the price growth gap between a new build and an old home exceeded 15% in just four years. Geography is no longer a shield against energy poverty.</p>
 
-    <div class="narrative">
-        <h2>Exploration: The Price of Age</h2>
-        <p>How much exactly is a year of age worth? The final tool below allows you to explore the current market reality house-by-house. By mapping building year against sale price, the "Insulation Tax" becomes visible as a physical slope. Notice the size of the bubbles—this represents the "Haggling %"—the discount buyers successfully demanded to take on the risk of an old home.</p>
-    </div>
+        <div class="viz-container">
+            <img src="regional_penalty.png" alt="Regional Penalty Chart" style="width: 100%;">
+            <p class="caption">
+                <strong>Figure 2: The universal gap.</strong> Small multiples showing the median price change (%) from 2019 to 2023 for every region. In every case, <span class="highlight-green">Modern homes</span> (green) saw higher growth (or lower losses) than <span class="highlight-red">Legacy homes</span> (red). This proves the Insulation Tax is a national phenomenon.
+            </p>
+        </div>
 
-    <div class="viz-container">
-        <h3>3. The Insulation Explorer</h3>
-        <iframe src="insulation_explorer.html" width="100%" height="700px" frameborder="0"></iframe>
-        <p class="caption">Figure 3: Interactive Market Reality (2023 Sales). Trace the relationship between building year and value. 
-        <strong>How to read:</strong> Each dot is a real sale. Notice the <span class="highlight-red">Red Cluster</span> (Pre-1961) vs the <span class="highlight-green">Green Cluster</span> (Post-1995). Larger dots indicate higher negotiation pressure—see how buyers are voting with their wallets for efficiency.</p>
-    </div>
+        <blockquote>
+            "In the new Danish economy, your home's energy label is your new location."
+        </blockquote>
 
-    <div class="narrative">
-        <h2>Conclusion</h2>
-        <p>The energy crisis of 2022 didn't just change our utility bills; it re-indexed the value of the Danish home. As we move toward a carbon-neutral future, the "Insulation Tax" is likely permanent. The home of the future is no longer just a place to live—it is a technical asset, and its value is now found as much in the thickness of its walls as the view from its windows.</p>
+        <h2>3. Micro-Friction: The Anxiety Index</h2>
+        <p>The final layer of our investigation looks at the <i>negotiation table</i>. Price indices only show final sales, but they hide the friction required to get there. By analyzing the "Price Haggling"—the percentage reduction buyers demand between the initial offer and the final sale—we can see buyer anxiety in real-time.</p>
+        
+        <p>In 2023, every drafty window and un-insulated attic became a point of contention. Buyers didn't just walk away from old homes; they demanded massive "Efficiency Discounts" to compensate for future heating bills. The interactive tool below lets you explore 2,000 real sales from the peak of the crisis.</p>
+
+        <div class="viz-container">
+            <h3>The Insulation Explorer</h3>
+            <iframe src="insulation_explorer.html" width="100%" height="750px" frameborder="0"></iframe>
+            <p class="caption">
+                <strong>Figure 3: Interactive Market Reality.</strong> Every dot represents a real Danish home sold in 2023. 
+                <strong>How to read:</strong> The x-axis is the year built. Notice the downward slope: younger houses sell for significantly more per square meter. 
+                <strong>Signal:</strong> The <i>size</i> of the bubbles represents the Haggling % (the discount). Notice how the <span class="highlight-red">Pre-1961 cluster</span> is dominated by large bubbles, showing buyers successfully voting with their wallets for more efficient walls.
+            </p>
+        </div>
+
+        <h2>Conclusion: The Permanent Pivot</h2>
+        <p>The energy crisis of 2022 was more than a temporary spike in utility bills; it was a permanent re-valuation of the Danish housing stock. For decades, we ignored the invisible leak of energy from our homes, subsidized by cheap fuel and a stable climate. Those days are gone.</p>
+        
+        <p>As Denmark moves toward its ambitious carbon-neutral goals, the "Insulation Tax" is likely to become an "Insulation Requirement." The home of the future is no longer just a place to live—it is a technical asset, and its resilience is defined by its thermal soul.</p>
         
         <center>
-            <a href="https://github.com/suneman/socialdata2026/blob/main/Final_Project_Explainer.ipynb" class="btn-link">TECHNICAL EXPLAINER & DATA PIPELINE</a>
+            <a href="https://github.com/suneman/socialdata2026/blob/main/Final_Project_Explainer.ipynb" class="btn-link">EXPLORE THE TECHNICAL DATA PIPELINE</a>
         </center>
-    </div>
+    </article>
 </div>
 
 </body>
