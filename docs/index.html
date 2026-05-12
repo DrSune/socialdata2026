@@ -7,84 +7,86 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <style>
         body { font-family: 'Georgia', serif; line-height: 1.8; color: #1a1a1a; background-color: #f9f9f9; }
-        .container { background: white; padding: 6rem; margin-top: 3rem; margin-bottom: 3rem; border-radius: 2px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); max-width: 900px; }
+        .container { background: white; padding: 6rem; margin-top: 3rem; margin-bottom: 3rem; border-radius: 2px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); max-width: 950px; }
         h1, h2, h3 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 800; color: #111; letter-spacing: -1px; }
         .hero { text-align: center; border-bottom: 1px solid #eee; margin-bottom: 5rem; padding-bottom: 3rem; }
         .hero h1 { font-size: 5.5rem; line-height: 1; margin-bottom: 2rem; }
         .author { text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; color: #888; font-weight: bold; }
-        .viz-container { margin: 6rem 0; text-align: center; }
+        .viz-container { margin: 6rem 0; text-align: center; background: #fff; }
         .viz-container img, .viz-container iframe { max-width: 100%; border: none; }
-        .caption { font-size: 0.9rem; color: #666; margin-top: 2rem; font-style: italic; max-width: 700px; margin-left: auto; margin-right: auto; border-top: 1px solid #eee; padding-top: 1rem; }
-        .narrative { font-size: 1.2rem; }
+        .caption { font-size: 0.9rem; color: #666; margin-top: 2rem; font-style: italic; max-width: 750px; margin-left: auto; margin-right: auto; border-top: 1px solid #eee; padding-top: 1rem; text-align: left; }
+        .narrative { font-size: 1.25rem; max-width: 750px; margin: 0 auto; }
         .dropcap { float: left; font-size: 85px; line-height: 1; padding-top: 10px; padding-right: 12px; font-weight: bold; color: #1a1a1a; }
         .btn-link { display: inline-block; padding: 1.5rem 3rem; background: #111; color: white; text-decoration: none; border-radius: 0; margin-top: 3rem; font-weight: bold; transition: 0.3s; }
-        .btn-link:hover { background: #444; }
-        blockquote { font-size: 1.5rem; font-style: italic; color: #444; border-left: 4px solid #111; padding-left: 2rem; margin: 4rem 0; }
-        .divider { height: 5px; background: #111; margin: 6rem 0; }
-        .candidate-card { background: #fff; border: 1px solid #eee; padding: 2rem; margin-bottom: 4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+        .btn-link:hover { background: #444; color: #fff; }
+        blockquote { font-size: 1.6rem; font-style: italic; color: #333; border-left: 6px solid #111; padding-left: 2rem; margin: 5rem auto; max-width: 750px; }
+        .transition-text { font-style: italic; color: #888; margin-top: 4rem; text-align: center; font-size: 1rem; }
+        .highlight-red { color: #d73027; font-weight: bold; }
+        .highlight-green { color: #1a9850; font-weight: bold; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="hero">
-        <p class="author">Special Report | May 2026</p>
+    <header class="hero">
+        <p class="author">Data Narrative | Segel & Heer Genre: Magazine</p>
         <h1>The Market Decoupling</h1>
-        <p style="font-size: 1.5rem; color: #555;">How the Energy Crisis shattered the Danish housing mono-culture.</p>
-    </div>
+        <p style="font-size: 1.6rem; color: #555; max-width: 700px; margin: 0 auto;">How the 2022 Energy Crisis shattered the Danish housing mono-culture.</p>
+    </header>
 
-    <div class="narrative">
-        <p><span class="dropcap">F</span>or thirty years, Danish house prices moved in a synchronized dance. Location mattered, of course, but the building itself was often a secondary variable. That changed in the winter of 2022. When energy prices spiked, the "Energimærke" stopped being a technical formality and became a financial weapon.</p>
+    <article class="narrative">
+        <p><span class="dropcap">F</span>or three decades, Danish house prices moved in a synchronized dance. While location mattered, the building's physical performance was often a secondary variable—a drafty window was a "charm," not a liability. That changed in the winter of 2022. When global energy prices spiked, the <i>Energimærke</i> (Energy Label) transformed from a bureaucratic formality into a primary driver of household wealth.</p>
         
-        <p>Our analysis of 1.5 million sales reveals a structural shift: a "Market Decoupling" where the building's technical performance dictates its equity growth as much as its zip code.</p>
-    </div>
+        <p>Our analysis of 1.5 million sales reveals a permanent structural shift: a <span class="highlight-red">Market Decoupling</span> where a home's technical resilience now dictates its equity growth as much as its zip code.</p>
 
-    <div class="viz-container">
-        <h3>1. The Shift in Sentiment (The "Gold Standard")</h3>
-        <img src="ridges_pre.png" alt="Pre-Crisis Ridges" style="width: 100%; margin-bottom: 2rem;">
-        <img src="ridges_peak.png" alt="Crisis Ridges" style="width: 100%;">
-        <p class="caption">Figure 1: Ridgeline distributions of price per sqm by building era. This shows the authentic market decoupling: legacy housing distributions (bottom) flattened and shifted left in 2022-23.</p>
-    </div>
+        <div class="viz-container">
+            <h3>1. The Shift in Sentiment</h3>
+            <img src="ridges_pre.png" alt="Pre-Crisis Ridges" style="width: 100%; margin-bottom: 2rem;">
+            <img src="ridges_peak.png" alt="Crisis Ridges" style="width: 100%;">
+            <p class="caption">
+                <strong>Figure 1: Highlighting the Decoupling.</strong> Using ridgeline distributions of price per sqm, we can see the "Market Pulse" by building era. 
+                In the stable 2018-19 market (top), all building eras shared overlapping price floors. 
+                By the 2022-23 crisis peak (bottom), the market <span class="highlight-red">decoupled</span>: legacy housing (G-E) saw its price floor drop and flatten, while modern builds (B-A) maintained their equity.
+            </p>
+        </div>
 
-    <div class="divider"></div>
-    <h2>Top-Tier Candidate Lab</h2>
-    <p>Below are 4 visualization candidates for slots 2 and 3. I have selected the most advanced patterns from the course for your review.</p>
+        <p class="transition-text">Having established that the market has fractured, we must ask: Where did this "Insulation Penalty" hit hardest?</p>
 
-    <div class="candidate-card">
-        <h3>Candidate A: The Temporal Movie (Current Figure 2)</h3>
-        <p><i>Inspiration: Week 5 (Heatmap Movies)</i></p>
-        <iframe src="vulnerability_movie.html" width="100%" height="750px" frameborder="0"></iframe>
-        <p class="caption">Strong for showing "Where" the stress happened over time. Fixed overlap and text issues.</p>
-    </div>
+        <h2>The Geography of Vulnerability</h2>
+        <p>This decoupling isn't just a number—it's a map. The penalty hit hardest in the rural outskirts where individual natural gas and oil boilers are common. In the interactive movie below, we track the median price of these vulnerable G/F era homes across Denmark's administrative areas.</p>
 
-    <div class="candidate-card">
-        <h3>Candidate B: The Anxiety Heatmap (Current Figure 3)</h3>
-        <p><i>Inspiration: Week 2 (Temporal Rhythms)</i></p>
-        <img src="market_rhythms.png" alt="Anxiety Index Heatmap" style="width: 100%;">
-        <p class="caption">Strong for showing the "Hidden Friction" (Haggling) that doesn't show up in final prices.</p>
-    </div>
+        <div class="viz-container" style="background: #fafafa; padding: 2rem; border-radius: 4px;">
+            <h3>2. The Vulnerability Movie</h3>
+            <iframe src="vulnerability_movie.html" width="100%" height="750px" frameborder="0"></iframe>
+            <p class="caption">
+                <strong>Figure 2: Animated Transition.</strong> This interactive heatmap tracks the price evolution of the most inefficient building stock (G/F era). 
+                <strong>Interaction:</strong> Scrub through the timeline. As the crisis enters 2022, observe the contraction in bubble size and the shift toward the <span class="highlight-red">red spectrum</span> in rural areas, marking the geographic frontlines of energy poverty.
+            </p>
+        </div>
 
-    <div class="candidate-card">
-        <h3>Candidate C: The Polar Price Compass (NEW)</h3>
-        <p><i>Inspiration: Week 3 (Exercise 2.2 - Polar Charts)</i></p>
-        <iframe src="candidate_polar.html" width="100%" height="600px" frameborder="0"></iframe>
-        <p class="caption">Visualizes the "Seasonal Squeeze". Notice how Legacy homes (red) face extreme haggling specifically in the winter months of the crisis.</p>
-    </div>
+        <blockquote>
+            "Resilience is no longer just about location; it is found in the thickness of our walls."
+        </blockquote>
 
-    <div class="candidate-card">
-        <h3>Candidate D: The Parallel Resilience Flow (NEW)</h3>
-        <p><i>Inspiration: Week 6 (Parallel Coordinates/Categories)</i></p>
-        <iframe src="candidate_parallel.html" width="100%" height="600px" frameborder="0"></iframe>
-        <p class="caption">The ultimate "Flare" plot. Allows the reader to trace the flow from building age to geographic area to the final market outcome.</p>
-    </div>
+        <h2>Exploration: The Path to Price Stress</h2>
+        <p>Is every old home a financial dead-end? The final phase of our narrative allows you to explore the complex multi-variate relationship between building age, geography, and the final market outcome. We call this the <i>Path to Price Stress</i>.</p>
 
-    <div class="narrative">
+        <div class="viz-container">
+            <h3>3. Trace the Flow</h3>
+            <iframe src="candidate_parallel.html" width="100%" height="650px" frameborder="0"></iframe>
+            <p class="caption">
+                <strong>Figure 3: Reader-Driven Exploration (The Flare).</strong> This parallel categories plot allows you to interactively trace how sales flow from Era to Region to "Price Stress" (Haggling). 
+                <strong>How to read:</strong> Click and drag on the categories to filter. Notice how <span class="highlight-red">G/F homes</span> in <span class="highlight-red">North Jutland</span> flow disproportionately into "Extreme" price stress, while the same era in the Capital remains shielded.
+            </p>
+        </div>
+
         <h2>Conclusion</h2>
-        <p>The energy crisis re-indexed the Danish home. Resilience is now a technical asset defined by your walls.</p>
+        <p>The energy crisis of 2022 didn't just change our utility bills; it re-indexed the value of the Danish home. As we move toward a carbon-neutral future, the "Decoupling" we've observed is likely permanent. The home of the future is no longer just a place to live—it is a technical asset.</p>
+        
         <center>
             <a href="https://github.com/suneman/socialdata2026/blob/main/Final_Project_Explainer.ipynb" class="btn-link">TECHNICAL EXPLAINER & DATA PIPELINE</a>
         </center>
-    </div>
+    </article>
 </div>
 
 </body>
